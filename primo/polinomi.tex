@@ -5,7 +5,7 @@
 \minilof                                % a minilof
 \mtcskip                                % put some skip here
 \minilot
-\section{Somme}
+\section{Somme}\index{Polinomi!somma}
 \label{sec:somme}
 \begin{esempio}
 Supponiamo di voler sommare\[ 3a+2b^2+4a-6b^2+2b\] procediamo come segue:
@@ -16,6 +16,7 @@ Supponiamo di voler sommare\[ 3a+2b^2+4a-6b^2+2b\] procediamo come segue:
 	 		7a-4b^2+2b&   \AddNode\\
 	 		\AddNode
 	 	\end{align*}
+	 		\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 	 	\LinkNodes{individuo i simili}%
 	 	%\LinkNodes{sommo i monomi simili}%
 	 	\LinkNodes{$3+4$ e $2-6$}%
@@ -24,7 +25,7 @@ Supponiamo di voler sommare\[ 3a+2b^2+4a-6b^2+2b\] procediamo come segue:
 \section{Prodotti}
 \begin{esempio}
 Supponiamo di avere \[3(2a-5b)-7a(2a+3b)+5(a^2+3b)\]
-In questo esempio abbiamo tre moltiplicazioni di un monomio per un binomio. A destra si vedono i risultati parziali  che poi sommati, danno il risultato finale.
+In questo esempio abbiamo tre moltiplicazioni\index{Polinomi!prodotti} di un monomio per un binomio. A destra si vedono i risultati parziali  che poi sommati, danno il risultato finale.
 \begin{NodesList}
 	\begin{align*}
 		\overbrace{3(2a-5b)}^{1}-\overbrace{7a(2a+3b)}^{2}+\overbrace{5(a^2+3b)}^{3}&\AddNode[1]\AddNode[2]\\
@@ -52,7 +53,7 @@ In questo esempio abbiamo tre moltiplicazioni di un monomio per un binomio. A de
 \end{esempio}
 \begin{esempio}
 Supponiamo di avere \[2a(3a-6)-(6a^2-2b)-3a(a-2b)\]
-Anche in questo esempio abbiamo tre moltiplicazioni di un monomio per un binomio. Nel secondo prodotto si nota il segno meno fuori della parentesi tonda che in pratica cambierà il segno dei termini all'interno della parentesi. A destra abbiamo  i risultati parziali delle tre moltiplicazioni.
+Anche in questo esempio abbiamo tre moltiplicazioni\index{Polinomi!prodotti} di un monomio per un binomio. Nel secondo prodotto si nota il segno meno fuori della parentesi tonda che in pratica cambierà il segno dei termini all'interno della parentesi. A destra abbiamo  i risultati parziali delle tre moltiplicazioni.
 \begin{NodesList}
 	\begin{align*}
 		\overbrace{2a(3a-6)}^{1}-\overbrace{(6a^2-2b)}^{2}-\overbrace{3a(a-2b)}^{3}&\AddNode[1]\AddNode[2]\\
@@ -81,7 +82,7 @@ Anche in questo esempio abbiamo tre moltiplicazioni di un monomio per un binomio
 \subsection{Polinomio per polinomio}
 \begin{esempio}
 Supponiamo di avere \[(3a-2b)(2a-b)+(2a^2-2)(2-a)\]
- In questo esempio abbiamo due moltiplicazioni di un binomio per un binomio. A destra i passaggi parziali. Infine sommiamo  gli elementi simili e otteniamo la soluzione.
+ In questo esempio abbiamo due moltiplicazioni\index{Polinomi!prodotti} di un binomio per un binomio. A destra i passaggi parziali. Infine sommiamo  gli elementi simili e otteniamo la soluzione.
  \begin{NodesList}
  	\begin{align*}
  		\overbrace{(3a-2b)(2a-b)}^{1}+\overbrace{(2a^2-2)(2-a)}^{2}&\nonumber\AddNode[1]\AddNode[2]\AddNode[3]\AddNode[4]\\
@@ -111,7 +112,7 @@ Supponiamo di avere \[(3a-2b)(2a-b)+(2a^2-2)(2-a)\]
 \end{esempio}
 \begin{esempio}
 Supponiamo di avere \[(xy-2)[(xy-2)xy+4+2xy]-(xy-2)(x^2y^2+2xy+4)\]
-In questo esempio abbiamo quattro moltiplicazioni  fra vari polinomi. A complicare le cose vi sono le regole di precedenza. A destra i vari risultati parziali. Si procede seguendo l'ordine indicato sopra l'espressione. 
+In questo esempio abbiamo quattro moltiplicazioni\index{Polinomi!prodotti}  fra vari polinomi. A complicare le cose vi sono le regole di precedenza. A destra i vari risultati parziali. Si procede seguendo l'ordine indicato sopra l'espressione. 
 	\begin{NodesList}
 		\begin{align*}
 			\overbrace{(xy-2)\overbrace{[\underbrace{(xy-2)xy}_{1}+4+2xy]}^{2}}^{3}-\overbrace{(xy-2)(x^2y^2+2xy+4)}^{4} &\AddNode[1]\AddNode[2]\\
@@ -153,7 +154,7 @@ In questo esempio abbiamo quattro moltiplicazioni  fra vari polinomi. A complica
 \end{esempio}
 \subsection{Quadrato del binomio}
 \begin{esempio}
-Supponiamo di voler calcolare il quadrato del binomio \[\left(a+2b\right)^2 \]
+Supponiamo di voler calcolare il quadrato\index{Polinomi!quadrato!binomio} del binomio \[\left(a+2b\right)^2 \]
 procediamo come segue:
 %\begin{figure}
 \begin{NodesList}
@@ -172,7 +173,7 @@ procediamo come segue:
 \end{NodesList}
 \end{esempio}
 \begin{esempio}
-Supponiamo di voler calcolare il quadrato di \[ \left(2x-3y\right)^2\]
+Supponiamo di voler calcolare il quadrato\index{Polinomi!quadrato!binomio} di \[ \left(2x-3y\right)^2\]
 procediamo come segue:
 %\begin{figure}
 \begin{NodesList}
@@ -191,7 +192,7 @@ procediamo come segue:
 \end{NodesList}
 \end{esempio}
 \begin{esempio}
-Supponiamo di voler calcolare il quadrato di \[\left(2-z\right)^2\]
+Supponiamo di voler calcolare il quadrato\index{Polinomi!quadrato!binomio} di \[\left(2-z\right)^2\]
 %\begin{figure}
 \begin{NodesList}
 	\begin{align*}
@@ -209,7 +210,7 @@ Supponiamo di voler calcolare il quadrato di \[\left(2-z\right)^2\]
 \end{NodesList}
 \end{esempio}
 \begin{esempio}
-Supponiamo di voler calcolare il quadrato di \[\left(1-\dfrac{1}{2}z\right)^2\]
+Supponiamo di voler calcolare il quadrato\index{Polinomi!quadrato!binomio} di \[\left(1-\dfrac{1}{2}z\right)^2\]
 %\begin{figure}
 \begin{NodesList}
 	\begin{align*}
@@ -228,7 +229,7 @@ Supponiamo di voler calcolare il quadrato di \[\left(1-\dfrac{1}{2}z\right)^2\]
 \end{esempio}
 \subsection{Differenza di quadrati}
 \begin{esempio}
-Supponiamo di voler calcolare \[(2x-3y)(2x+3y)\]
+Supponiamo di voler calcolare\index{Polinomi!differenza!quadrati} \[(2x-3y)(2x+3y)\]
 procediamo come segue
 \begin{NodesList}
 	\begin{align*}
@@ -247,7 +248,7 @@ procediamo come segue
 \end{esempio}
 \begin{esempio}
 Supponiamo di vole calcolare \[(-4a-b)(-4a+b)\]
-L'esempio non sembra una differenza di quadrati ma anche qui abbiamo un termine che mantiene il segno ed un termine che lo cambia, procediamo come segue
+L'esempio non sembra una differenza di quadrati\index{Polinomi!differenza!quadrati} ma anche qui abbiamo un termine che mantiene il segno ed un termine che lo cambia, procediamo come segue
 \begin{NodesList}
 	\begin{align*}
 		(-4a-b)(-4a+b)&\AddNode[1]\AddNode[2]\AddNode[3]\\
@@ -265,7 +266,7 @@ L'esempio non sembra una differenza di quadrati ma anche qui abbiamo un termine 
 \end{esempio}
 \begin{esempio}
 Supponiamo di vole calcolare \[(a+b+c)(a+b+c)\]
-L'esempio non sembra una differenza di quadrati ma anche qui abbiamo un termine che mantiene il segno ed un termine che lo cambia solo che qui non è un monomio ma un binomio, procediamo come segue:
+L'esempio non sembra una differenza di quadrati\index{Polinomi!differenza!quadrati} ma anche qui abbiamo un termine che mantiene il segno ed un termine che lo cambia solo che qui non è un monomio ma un binomio, procediamo come segue:
 \begin{NodesList}
 	\begin{align*}
 		(a+b+c)(a-b-c)&\AddNode[1]\AddNode[2]\AddNode[3]\\
@@ -304,7 +305,7 @@ procediamo come segue:
 \end{esempio}
 \subsection{Quadrato del trinomio}
 \begin{esempio}
-Supponiamo di vole calcolare \[(a+2b-3c)^2\]
+Supponiamo di vole calcolare\index{Polinomi!quadrato!trinomio} \[(a+2b-3c)^2\]
 procediamo come segue:
 \begin{NodesList}
 	\begin{align*}

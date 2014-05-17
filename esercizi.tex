@@ -1,29 +1,6 @@
  %\documentclass[a4paper,oneside,openany]{book}
 \input{../Mod_base/base}
 \input{../Mod_base/grafica}
-%\pgfplotsset{compat=1.8}
-%\newcommand{\stampa}[3]{%
-%	\ifcase#1\relax\or
-%	\draw(0,0)--(\raggio,{\raggio*tan(#2)})node[above] {$#3$};\or
-%	\draw(0,0)--(\raggio,{\raggio*tan(#2)})node[above right] {$#3$};\or
-%	\draw(0,0)--(\raggio,{\raggio*tan(#2)})node[above left] {$#3$};\or
-%	\draw(0,0)--(\raggio,{\raggio*tan(#2)})node[below] {$#3$};\or
-%	\draw(0,0)--(\raggio,{\raggio*tan(#2)})node[below right] {$#3$};\or
-%	\draw(0,0)--(\raggio,{\raggio*tan(#2)})node[below left] {$#3$};%
-%	\fi
-%}
-%\newcommand{\stampAng}[4]{%
-%	\ifcase#1\relax\or
-%	\draw[->] (\sraggio/#2,0 ) arc (0:#3:\sraggio/#2) node[above] {$#4$};\or
-%	\draw[->] (\sraggio/#2,0 ) arc (0:#3:\sraggio/#2) node[above right] {$#4$};\or
-%	\draw[->] (\sraggio/#2,0 ) arc (0:#3:\sraggio/#2) node[above left] {$#4$};\or
-%	\draw[->] (\sraggio/#2,0 ) arc (0:#3:\sraggio/#2) node[below] {$#4$};\or
-%	\draw[->] (\sraggio/#2,0 ) arc (0:#3:\sraggio/#2) node[below right] {$#4$};\or
-%	\draw[->] (\sraggio/#2,0 ) arc (0:#3:\sraggio/#2) node[below left] {$#4$};%
-%	\fi
-%}
-%\usetikzlibrary{external}
-%\usepackage[mode=buildnew,subpreambles=true]{standalone}
 \input{../Mod_base/matematica}
 \input{../Mod_base/tabelle}
 \DeclareCaptionFormat{grafico}{\textbf{Grafico \thefigure}#2#3}
@@ -62,11 +39,10 @@
 \newcommand{\tabincludestandalone}[2][]{%
 	$\vcenter{\hbox{\includestandalone[#1]{#2}}}$}
 
-%--------- Indici localixcxddd  
+
 \input{macro/macro_xlop}% scomposizione in fattori primi e operazioni
 \getprime{20}%
 % % % % % % % % % % % % % % % % % braille
-\usepackage[puttinydots]{braille}
 
 \newcommand{\mytable}[1]{%
 	\enskip\begin{tabular}[t]{r|l} 
@@ -147,6 +123,10 @@
 \makeatother
 
 \listfiles
+
+%\usepackage{calc}
+
+
 
 
  \begin{document}

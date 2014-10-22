@@ -1,6 +1,7 @@
  %\documentclass[a4paper,oneside,openany]{book}
 \input{../Mod_base/base}
 \input{../Mod_base/grafica}
+\input{../Mod_base/tcolorboxgest}
 \input{../Mod_base/matematica}
 \input{../Mod_base/tabelle}
 \DeclareCaptionFormat{grafico}{\textbf{Grafico \thefigure}#2#3}
@@ -23,6 +24,7 @@
 \input{../Mod_base/loghi}
 \input{../Mod_base/unita_misura}
 \input{../Mod_base/utili}
+\input{../Mod_base/stand_class}
 \newcommand{\function}[5]{%
   \begin{array}{@{}r<{{}}@{}c@{}c@{}l@{}}
   #1\colon & #2 & {}\to{}     & #3 \\
@@ -40,8 +42,7 @@
 	$\vcenter{\hbox{\includestandalone[#1]{#2}}}$}
 
 
-\input{macro/macro_xlop}% scomposizione in fattori primi e operazioni
-\getprime{20}%
+
 % % % % % % % % % % % % % % % % % braille
 
 \newcommand{\mytable}[1]{%
@@ -60,57 +61,9 @@
 			\draw (0,0) node [#1 port] {};
 		\end{circuitikz}} 
 
-
-%todo inizio
-\usepackage[italian,colorinlistoftodos]{todonotes}
-%\usepackage{todonotes}
-
-\newcommand{\bassapriorita}[1]{\todo[color=green!40]{#1}}
-\newcommand{\mediapriorita}[1]{\todo[color=blue!40]{#1}}
-\newcommand{\altapriorita}[1]{\todo[color=red!40]{#1}}
-%todofine
-
-
-
-
-%\usepackage{imakeidx}
-%\makeindex[options=-s oldclaudio.sti]
-\newcommand{\prodcroce}[4]{%
-	\begin{tikzpicture}[thick]
-	\def\x{2.8mm}
-	\def\h{2.4mm}
-	\def\dist{12mm}%1cm
-	\node at (0,0) {$\displaystyle \frac{#1}{#2}$};
-	\node at (\dist,0) {$\displaystyle \frac{#3}{#4}$};
-	\node at (2.5*\dist,0) {$#1\cdot #4=#2\cdot #3$};
-	% collegamento termini
-	\draw[-stealth] (\x, \h)--(\dist-\x,-\h);
-	\draw[-stealth] (\x,-\h)--(\dist-\x, \h);
-	\end{tikzpicture}%
-}
-% % % % % % % loghi
-%\usepackage{guit}
-%\usepackage[copyright]{ccicons}
-%%\usepackage{metalogo}
-% % % % % % % %
-% % % % % % % % % % % % % % % % % % % %TITOLO % % % % % % % % % % % % % % % % % % % % % % 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
-% % % % % % % % % % % % % % % % % % % % % % %gestione data % % % % % % % % % % % % %
-%\usepackage{datetime}
-%\longdate
-%\settimeformat{hhmmsstime}
-% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
-%\usepackage{cleveref}
 
-
- \usepackage[italian,checkfiles]{minitoc}
  \usepackage{placeins} 
- %\setcounter{secnumdepth}{3}     % fino a che livello le sezioni saranno numerate
-% \setcounter{tocdepth}{3}       % profondit� indice globale
-% \setcounter{minitocdepth}{3}
-
-
 
 \makeatletter
 \renewcommand\frontmatter{%
@@ -137,7 +90,7 @@
 		
 		
 		% Upper part of the page
-		\input{../Mod_base/Lgrande}\\[1cm]    
+		\input{../Mod_base/Lgrande2}\\[1cm]    
 		
 		\textsc{\LARGE Claudio Duchi}\\[1.5cm]
 		
@@ -154,20 +107,8 @@
 		\opt{extra}{{\bfseries EXTRA}\\[0.4cm]}
 		\opt{grafici}{{\bfseries GRAFICI}\\[0.4cm]}
 		\HRule \\[1.5cm]
-		
-		% Author and supervisor
-		%		\begin{minipage}{0.4\textwidth}
-		%		%	\begin{flushleft} \large
-		%				\emph{Author:}\\
-		%				John \textsc{Smith}
-		%		%	\end{flushleft}
-		%		\end{minipage}
-		%		\begin{minipage}{0.4\textwidth}
-		%			\begin{flushright} \large
-		%				\emph{Supervisor:} \\
-		%				Dr.~Mark \textsc{Brown}
-		%			\end{flushright}
-		%		\end{minipage}
+
+
 		
 		\vfill
 		
@@ -179,20 +120,17 @@
 \end{titlepage}
 \setcounter{page}{2}
 \input{../Mod_base/copyright}
-\dominitoc
-\dominilof                  % centers title of minilof's
-\dominilot
+
 \tableofcontents 
-\mtcaddchapter
+
 \cleardoublepage
 \addcontentsline{toc}{chapter}{\numberline{}\listtablename}
 \listoftables
-\mtcaddchapter
-\adjustptc
+
 \cleardoublepage
 \addcontentsline{toc}{chapter}{\numberline{}\listfigurename}
 \listoffigures
-\mtcaddchapter
+
 %\todototoc
 \cleardoublepage
 %\addcontentsline{toc}{chapter}{\numberline{}\listoftodos}

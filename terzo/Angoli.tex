@@ -1,0 +1,83 @@
+\chapter{Angoli}
+\label{cha:angolibase}
+%\num[round-precision=2,round-mode=places]{1.678}
+\section{Da grado sessagesimale a sessadecimale}
+\begin{esempiot}{}{}
+Trasformare $\alpha=\ang{52;38;28}$ in forma sessa-decimale\index{Sessadecimale}\index{Sessadecimale}
+\end{esempiot}
+\[\alpha=\ang{52}+\left(\dfrac{38}{60}\right)^{\degree }+\left(\dfrac{28}{3600}\right)^{\degree }=\ang{52}+\left(\dfrac{38\cdot60+28}{3600}\right)^{\degree } =\ang{52}+\left(\dfrac{2308}{3600}\right)^{\degree }\approx\ang[round-precision=2,round-mode=places]{52,641111}\]
+\stampapuntini
+\begin{esempiot}{}{}
+	Trasformare $\alpha=\ang{75;55;35}$ in forma sessa-decimale\index{Sessadecimale}\index{Sessadecimale}
+\end{esempiot}
+\[\alpha=\ang{75}+\left(\dfrac{\puntini{55}}{60}\right)^{\degree }+\left(\dfrac{\puntini{35}}{3600}\right)^{\degree }=\ang{75}+\left(\dfrac{\puntini{55\cdot60+35}}{3600}\right)^{\degree } =\ang{75}+\left(\dfrac{\puntini{3335}}{3600}\right)^{\degree }\approx\puntini{\ang[round-precision=2,round-mode=places]{75,92638}}\]
+\nonstampapuntini
+\section{Da grado sessadecimale a sessagesimale}
+\begin{esempiot}{}{}
+	Convertire $\alpha=\ang{75.84}$
+\end{esempiot}
+Iniziamo con 
+$\alpha=\ang{75}+\ang{0.84}$
+\begin{align*}
+\alpha^{\degree}&=\ang{75}\\ 
+\alpha^{\arcminute}&=\ang{0.84}\cdot 60=\ang{;50.4;}=\ang{;50;}\\
+\alpha^{\arcsecond}&=\ang{;0.4;}\cdot 60=\ang{;;24}\\
+\end{align*}
+abbiamo quindi
+\[\alpha=\ang{75.84}=\ang{75;50;24}\]
+\stampapuntini
+\begin{esempiot}{}{}
+	Convertire $\alpha=\ang{45.35}$ in gradi sessagesimali
+\end{esempiot}
+Iniziamo con 
+$\alpha=\ang{45}+\ang{0.35}$
+\begin{align*}
+\alpha^{\degree}&=\puntini{\ang{45}}\\ 
+\alpha^{\arcminute}&=\puntini{\ang{0.35}}\cdot 60=\ang{;21;}\\
+\alpha^{\arcsecond}&=\puntini{\ang{;0.0;}}\cdot 60=\ang{;;0}\\
+\end{align*}
+abbiamo quindi
+\[\alpha=\ang{45.35}=\ang{45;21;0}\]
+\nonstampapuntini
+\section{Conversioni radianti gradi}
+\begin{esempiot}{}{}
+Convertire\ang{45;58;25} in radianti\index{Radiante}
+\end{esempiot}
+Prima convertiamo in gradi sessadecimali
+\[\alpha=\ang{45}+\left(\dfrac{58}{60}\right)^{\degree }+\left(\dfrac{25}{3600}\right)^{\degree }=\ang{45}+\left(\dfrac{58\cdot60+25}{3600}\right)^{\degree } =\ang{45}+\left(\dfrac{3505}{3600}\right)^{\degree }\approx\ang[round-precision=4,round-mode=places]{45.97361111}\]
+\[\rho=\dfrac{\pi}{180}\alpha\approx\dfrac{\pi}{180}\cdot\ang[round-precision=4,round-mode=places]{45.97361111}\approx\SI[round-precision=2,round-mode=places]{0.802390882}{\radian}\]
+\stampapuntini
+\begin{esempiot}{}{}
+	Convertire\ang{70;48;25} in radianti
+\end{esempiot}
+Prima convertiamo in gradi sessadecimali
+\[\alpha=\puntini{\ang{70}}+\left(\dfrac{48}{60}\right)^{\degree }+\left(\dfrac{25}{3600}\right)^{\degree }=\ang{70}+\left(\dfrac{\puntini{48\cdot60}+25}{3600}\right)^{\degree } =\ang{70}+\left(\dfrac{\puntini{2905}}{3600}\right)^{\degree }\approx\ang[round-precision=4,round-mode=places]{70.806944}\]
+\[\rho=\dfrac{\puntini{\pi}}{180}\alpha\approx\dfrac{\puntini{\pi}}{180}\cdot\ang[round-precision=4,round-mode=places]{70.806944}\approx\puntini{\SI[round-precision=2,round-mode=places]{1.2358143}{\radian}}\]
+\nonstampapuntini
+\begin{esempiot}{}{}
+	Convertire\SI[round-precision=3,round-mode=places]{2.856}{\radian} in gradi sessagesimali
+\end{esempiot}
+\[\alpha=\dfrac{180}{\pi}\cdot\rho=\dfrac{180}{\pi}\cdot\SI[round-precision=3,round-mode=places]{2.856}{\radian}\approx\ang[round-precision=4,round-mode=places]{163.6367463}\]
+Iniziamo con 
+$\alpha=\ang{163}+\ang[round-precision=4,round-mode=places]{0.6367463}$
+\begin{align*}
+\alpha^{\degree }&=\ang{163}\\ 
+\alpha^{\arcminute}&=\ang[round-precision=4,round-mode=places]{0.6367463;;}\cdot 60=\ang[round-precision=4,round-mode=places]{;38.20477736;}=\ang{;38;}\\
+\alpha^{\arcsecond}&=\ang[round-precision=4,round-mode=places]{;0.204777358;}\cdot 60\approx\ang{;;12}\\
+\end{align*}
+abbiamo quindi
+\[\alpha=\ang[round-precision=4,round-mode=places]{163.6367463}=\ang{163;38;12}\]
+\stampapuntini
+\begin{esempiot}{}{}
+	Convertire\SI[round-precision=3,round-mode=places]{0.823310}{\radian} in gradi sessagesimali
+\end{esempiot}
+\[\alpha=\dfrac{180}{\pi}\cdot\rho=\dfrac{180}{\pi}\cdot\SI[round-precision=3,round-mode=places]{0.823310}{\radian}\approx\puntini{\ang[round-precision=4,round-mode=places]{47.17218823}}\]
+Iniziamo con 
+$\alpha=\ang{47}+\ang[round-precision=4,round-mode=places]{0.17218823}$
+\begin{align*}
+\alpha^{\degree}&=\puntini{\ang{47}}\\ 
+\alpha^{\arcminute}&=\ang[round-precision=4,round-mode=places]{0.17218823;;}\cdot 60=\puntini{\ang[round-precision=4,round-mode=places]{;10.33129385;}}=\puntini{\ang{;10;}}\\
+\alpha^{\arcsecond}&=\puntini{\ang[round-precision=4,round-mode=places]{;0.331293854;}\cdot 60\approx\ang{;;19}}\\
+\end{align*}
+abbiamo quindi
+\[\alpha=\ang[round-precision=4,round-mode=places]{47.17218823}=\ang{47;10;19}\]

@@ -13,7 +13,7 @@
 	% draw the coordinates
 	\pgfmathsetmacro{\raggio}{4};
 	\pgfmathsetmacro{\pangolo}{30};
-	\pgfmathsetmacro{\sangolo}{{180-\pangolo}};
+	\pgfmathsetmacro{\sangolo}{{180+\pangolo}};
 	\pgfmathsetmacro{\mraggio}{\raggio/3};
 	\pgfmathsetmacro{\sraggio}{1.9*\raggio};
 	% draw the unit circle
@@ -34,11 +34,11 @@
 	\coordinate (T)  at (\raggio,{\raggio*tan(\sangolo});
 	\node at (Q) [label=above left:$P$]{};
 	\node at (T) [label=above right:$T$]{};
-	\node at (PY) [label=below left:$\dfrac{3}{5}$]{};
+	\node at (T) [label=below right:$\dfrac{1}{8}$]{};
 	\fill [color=black] (OO) circle (1.5pt);
 %	\fill [color=black] (P) circle (1.5pt);
 	%\fill [color=black] (PX) circle (1.5pt);
-	\fill [color=black] (PY) circle (1.5pt);
+	\fill [color=black] (QY) circle (1.5pt);
 	%\fill [color=black] (M) circle (1.5pt);
 	\fill [color=black] (Q) circle (1.5pt);
 	\fill [color=black] (QX) circle (1.5pt);
@@ -46,7 +46,7 @@
 	%\fill [color=black] (QY) circle (1.5pt);
 	%\draw[->] {(\sraggio/2.5},0 ) arc (0:\pangolo:\sraggio/2.5) node[above] {$\arco$};
 	%\draw(Pr)--(Qr);
-%	\draw(P)--(PY);% node[midway,above] {$ cos(\alpha)$};
+	%\draw(P)--(PY);% node[midway,above] {$ cos(\alpha)$};
 	\draw(Q)--(QY);
 	\draw(Q)--(T);
 	% node[midway,above] {$cos(ang{180}-\alpha)$};

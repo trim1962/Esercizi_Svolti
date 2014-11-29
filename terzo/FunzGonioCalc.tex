@@ -17,12 +17,13 @@ In genere per le funzioni inverse si usa una combinazione di tasti \tastoshift
 \end{center}
 
 La calcolatrice deve gestire i radianti, i gradi con un tasto mode \tastomode e il numero $\pi$ \tastopgreco. Utile è la presenza di un tasto \tastoans che richiama l'ultimo risultato ottenuto.
-\section{Angolo in gradi}
+\section{Trovare valore funzione}
+\subsection{Angolo in gradi}
 \begin{esempiot}{}{}
 Calcolare  \[\sin\ang{38;28;50}\] 
 \end{esempiot}
 Controllare che la calcolatrice è impostata in gradi sessagesimali\index{Grado!Sessagesimale}.
-Basta verificare che \tastosin \tasto{90}\tastouguale $1$. In caso contrario modificare le impostazioni. 
+Basta verificare che \testgradi In caso contrario modificare le impostazioni. 
 
 Si inizia convertendo  i gradi in forma sessadecimale\index{Grado!Sessagesimale}\index{Grado!Sessadecimale}\index{Seno}
 
@@ -37,7 +38,7 @@ usando la calcolatrice
 
 \begin{center}
 \begin{tabular}{ll}
-\tasto{28}\tastopper\tasto{60}\tastouguale	& 1680 \\ 
+\tasto{28}\tastoper\tasto{60}\tastouguale	& 1680 \\ 
 \tastoans\tastopiu\tasto{50}\tastouguale	& 1730 \\
 \tastoans\tastodiv\tasto{3600}\tastouguale	& \num[round-precision=6,round-mode=places]{0.480555555} \\
 \tastoans\tastopiu\tasto{38}\tastouguale&\num[round-precision=6,round-mode=places]{38.480555555} \\
@@ -53,7 +54,7 @@ Infine
 	Calcolare  \[\tan\ang{120;30;40}\] 
 \end{esempiot}
 Controllare che la calcolatrice è impostata in gradi sessagesimali\index{Grado!Sessagesimale}.
-Basta verificare che  \tastosin \tasto{90}\tastouguale $1$. In caso contrario modificare le impostazioni. 
+Basta verificare che  \testgradi. In caso contrario modificare le impostazioni. 
 
 Si inizia convertendo  i gradi in forma sessadecimale\index{Grado!Sessagesimale}\index{Grado!Sessadecimale}\index{Tangente}
 
@@ -69,7 +70,7 @@ usando la calcolatrice
 
 \begin{center}
 	\begin{tabular}{ll}
-		\tasto{30}\tasto{$\times$}\tasto{60}\tastouguale	& 1800 \\ 
+		\tasto{30}\tastoper\tasto{60}\tastouguale	& 1800 \\ 
 		\tastoans\tastopiu\tasto{40}\tastouguale	& 1840 \\
 		\tastoans\tastodiv\tasto{3600}\tastouguale	& \num[round-precision=6,round-mode=places]{0.511111111} \\
 		\tastoans\tastopiu\tasto{120}\tastouguale&\num[round-precision=6,round-mode=places]{120.511111111} \\
@@ -78,26 +79,104 @@ usando la calcolatrice
 
 Infine \tastotan \tastoans\tastouguale e ottenere
 \[\tan\ang{120;30;40}=\num[round-precision=6,round-mode=places]{-1.69610537}\] 
-\section{Angolo in radianti}
+\subsection{Angolo in radianti}
 \begin{esempiot}{}{}
 	Calcolare  \[\cos\dfrac{\pi}{4}\] 
 \end{esempiot}
 Controllare che la calcolatrice è impostata in radianti\index{Radianti}\index{Coseno}.
 Basta verificare che 
-\begin{center}
-\begin{tabular}{ll}
-\tastopgreco\tastodiv\tasto{2}\tastouguale	&\num[round-precision=6,round-mode=places]{1.570796327}  \\ 
-	\tastosin\tastoans& 1 \\ 
-\end{tabular} 
-\end{center}
+\testradianti
  In caso contrario modificare le impostazioni.
+
+Non resta che procedere con il calcolo
+	
 \begin{center}
-	
-	Non resta che procedere con il calcolo
-	
 \begin{tabular}{ll}
 	\tastopgreco\tastodiv\tasto{4}\tastouguale& \num[round-precision=6,round-mode=places]{0.785398163}  \\ 
-\tastocos\tastoans	&\num[round-precision=6,round-mode=places]{0.707106781}   \\ 
+\tastocos\tastoans\tastouguale	&\num[round-precision=6,round-mode=places]{0.707106781}   \\ 
 \end{tabular} 
 \end{center}
 \[\cos\dfrac{\pi}{4}=\num[round-precision=6,round-mode=places]{0.707106781}\] 
+\begin{esempiot}{}{}
+	Calcolare  \[\tan\SI[round-precision=4,round-mode=places]{1.4589}{\radian}\] 
+\end{esempiot}
+Controllare che la calcolatrice è impostata in radianti\index{Radianti}\index{Tangente}.
+Basta verificare che 
+\testradianti
+In caso contrario modificare le impostazioni.
+
+Non resta che procedere con il calcolo
+
+\begin{center}
+	\begin{tabular}{ll}
+	  \tastotan\tasto{\num[round-precision=4,round-mode=places]{1.4589}}\tastouguale& \num[round-precision=6,round-mode=places]{8.899513904}\\ 
+	\end{tabular} 
+\end{center}
+otteniamo
+ \[\tan\SI[round-precision=4,round-mode=places]{1.4589}{\radian}=\num[round-precision=6,round-mode=places]{8.899513904}\] 
+ \section{Trovare l'angolo nota la funzione}
+ \subsection{Angolo in gradi}
+ \begin{esempiot}{}{}
+ Trovare l'angolo per cui \[\cos\alpha=\num[round-precision=6,round-mode=places]{0.778934}\]
+ \end{esempiot}
+Controllare che la calcolatrice è impostata in gradi  sessagesimali\index{Grado!Sessagesimale}.
+Basta verificare che  \testgradi In caso contrario modificare le impostazioni.
+
+\begin{center}
+	\begin{tabular}{ll}
+		\tastoicos\tasto{\num[round-precision=6,round-mode=places]{0.778934}}\tastouguale&\num[round-precision=6,round-mode=places]{38.8369232}\\  \tastoans\tastomeno\tasto{38}\tastouguale&\num[round-precision=6,round-mode=places]{0.836923195}\\
+		\tastoans\tastoper\tasto{60}\tastouguale&\num[round-precision=6,round-mode=places]{50.21539175}\\
+		\tastoans\tastomeno\tasto{50}\tastouguale&\num[round-precision=6,round-mode=places]{0.215391754}\\
+		\tastoans\tastoper\tasto{60}\tastouguale&\num[round-precision=6,round-mode=places]{12.929350526}\\
+	\end{tabular} 
+\end{center}
+\[\alpha=\ang{38;50;12}\]
+ \begin{esempiot}{}{}
+ 	Trovare l'angolo per cui \[\tan\alpha=\num[round-precision=6,round-mode=places]{1.414213562}\]
+ \end{esempiot}
+ Controllare che la calcolatrice è impostata in gradi  sessagesimali\index{Grado!Sessagesimale}.
+ Basta verificare che  \testgradi In caso contrario modificare le impostazioni.
+ 
+ \begin{center}
+ 	\begin{tabular}{ll}
+ 		\tastoitan\tasto{\num[round-precision=6,round-mode=places]{1.414213562}}\tastouguale&\num[round-precision=6,round-mode=places]{54.73561032}\\  \tastoans\tastomeno\tasto{54}\tastouguale&\num[round-precision=6,round-mode=places]{0.735610317}\\
+ 		\tastoans\tastoper\tasto{60}\tastouguale&\num[round-precision=6,round-mode=places]{44.13661903}\\
+ 		\tastoans\tastomeno\tasto{44}\tastouguale&\num[round-precision=6,round-mode=places]{0.136619034}\\
+ 		\tastoans\tastoper\tasto{60}\tastouguale&\num[round-precision=6,round-mode=places]{8.197142083}\\
+ 	\end{tabular} 
+ \end{center}
+ \[\alpha=\ang{54;44;8}\]
+ \subsection{Angolo in radianti}
+ \begin{esempiot}{}{}
+ 	Calcolare  \[\sin\alpha=\SI[round-precision=6,round-mode=places]{-0.783942}{\radian}\] 
+ \end{esempiot}
+ Controllare che la calcolatrice è impostata in radianti\index{Radianti}\index{Seno}.
+ Basta verificare che 
+ \testradianti
+ In caso contrario modificare le impostazioni.
+ 
+ Non resta che procedere con il calcolo
+ 
+ \begin{center}
+ 	\begin{tabular}{ll}
+ 		\tastoisin\tasto{\num[round-precision=6,round-mode=places]{-0.783942}}\tastouguale&\num[round-precision=6,round-mode=places]{-0.900990129}\\  \tasto{2}\tastoper\tastopgreco\tastopiu\tastoans\tastouguale&\num[round-precision=6,round-mode=places]{5.382195178}\\
+ 	\end{tabular} 
+ \end{center}
+ \[\rho= \SI[round-precision=6,round-mode=places]{-0.900990129}{\radian}\]
+ \[\rho= \SI[round-precision=6,round-mode=places]{5.382195178}{\radian}\]
+  \begin{esempiot}{}{}
+  	Calcolare  \[\cos\alpha=\SI[round-precision=6,round-mode=places]{-0.478973}{\radian}\] 
+  \end{esempiot}
+  Controllare che la calcolatrice è impostata in radianti\index{Radianti}\index{Seno}.
+  Basta verificare che 
+  \testradianti
+  In caso contrario modificare le impostazioni.
+  
+  Non resta che procedere con il calcolo
+  
+  \begin{center}
+  	\begin{tabular}{ll}
+  		\tastoicos\tasto{\num[round-precision=6,round-mode=places]{-0.4788973}}\tastouguale&\num[round-precision=6,round-mode=places]{2.070280734}\\  
+  	\end{tabular} 
+  \end{center}
+  \[\rho= \SI[round-precision=6,round-mode=places]{2.070280734}{\radian}\]

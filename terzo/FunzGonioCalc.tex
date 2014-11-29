@@ -1,0 +1,103 @@
+\chapter{Funzioni goniometriche usando la calcolatrice}
+\label{cha:ValFunzGonioCalc}
+Quando si parla di calcolatrice si parla di una calcolatrice scientifica. Devono essere presenti i tasti:
+
+\begin{center}
+	\begin{tabular}{ccc}
+\tastosin&\tastocos&\tastotan \\ 
+\end{tabular} 
+\end{center}
+
+In genere per le funzioni inverse si usa una combinazione di tasti \tastoshift  
+
+\begin{center}
+	\begin{tabular}{ccc}
+		\tastoisin&\tastoicos&\tastoitan \\ 
+	\end{tabular} 
+\end{center}
+
+La calcolatrice deve gestire i radianti, i gradi con un tasto mode \tastomode e il numero $\pi$ \tastopgreco. Utile è la presenza di un tasto \tastoans che richiama l'ultimo risultato ottenuto.
+\section{Angolo in gradi}
+\begin{esempiot}{}{}
+Calcolare  \[\sin\ang{38;28;50}\] 
+\end{esempiot}
+Controllare che la calcolatrice è impostata in gradi sessagesimali\index{Grado!Sessagesimale}.
+Basta verificare che \tastosin \tasto{90}\tastouguale $1$. In caso contrario modificare le impostazioni. 
+
+Si inizia convertendo  i gradi in forma sessadecimale\index{Grado!Sessagesimale}\index{Grado!Sessadecimale}\index{Seno}
+
+\begin{align*}
+&\phantom{=}\ang{38}+\left(\dfrac{28}{60}\right)^{\degree}+\left(\dfrac{50}{3600}\right)^{\degree }=\\
+&=\ang{38}+\left(\dfrac{28\cdot60+50}{3600}\right)^{\degree}=\\
+&=\ang{38}+\left(\dfrac{1680+50}{3600}\right)^{\degree}=\\
+&=\ang{38}+\left(\dfrac{1730}{3600}\right)^{\degree}=\\
+&=\ang[round-precision=6,round-mode=places]{38.4805556}
+\end{align*}
+usando la calcolatrice
+
+\begin{center}
+\begin{tabular}{ll}
+\tasto{28}\tastopper\tasto{60}\tastouguale	& 1680 \\ 
+\tastoans\tastopiu\tasto{50}\tastouguale	& 1730 \\
+\tastoans\tastodiv\tasto{3600}\tastouguale	& \num[round-precision=6,round-mode=places]{0.480555555} \\
+\tastoans\tastopiu\tasto{38}\tastouguale&\num[round-precision=6,round-mode=places]{38.480555555} \\
+\end{tabular}
+\end{center} 
+
+Infine
+
+ \tastosin \tastoans\tastouguale e ottenere
+\[\sin\ang{38;28;50}=\num[round-precision=6,round-mode=places]{0.622249007}\] 
+
+\begin{esempiot}{}{}
+	Calcolare  \[\tan\ang{120;30;40}\] 
+\end{esempiot}
+Controllare che la calcolatrice è impostata in gradi sessagesimali\index{Grado!Sessagesimale}.
+Basta verificare che  \tastosin \tasto{90}\tastouguale $1$. In caso contrario modificare le impostazioni. 
+
+Si inizia convertendo  i gradi in forma sessadecimale\index{Grado!Sessagesimale}\index{Grado!Sessadecimale}\index{Tangente}
+
+\begin{align*}
+&\phantom{=}\ang{120}+\left(\dfrac{30}{60}\right)^{\degree}+\left(\dfrac{40}{3600}\right)^{\degree }=\\
+&=\ang{120}+\left(\dfrac{30\cdot60+40}{3600}\right)^{\degree}=\\
+&=\ang{120}+\left(\dfrac{1800+40}{3600}\right)^{\degree}=\\
+&=\ang{120}+\left(\dfrac{1730}{3600}\right)^{\degree}=\\
+&=\ang[round-precision=6,round-mode=places]{120.5111111}
+\end{align*}
+
+usando la calcolatrice
+
+\begin{center}
+	\begin{tabular}{ll}
+		\tasto{30}\tasto{$\times$}\tasto{60}\tastouguale	& 1800 \\ 
+		\tastoans\tastopiu\tasto{40}\tastouguale	& 1840 \\
+		\tastoans\tastodiv\tasto{3600}\tastouguale	& \num[round-precision=6,round-mode=places]{0.511111111} \\
+		\tastoans\tastopiu\tasto{120}\tastouguale&\num[round-precision=6,round-mode=places]{120.511111111} \\
+	\end{tabular}
+\end{center} 
+
+Infine \tastotan \tastoans\tastouguale e ottenere
+\[\tan\ang{120;30;40}=\num[round-precision=6,round-mode=places]{-1.69610537}\] 
+\section{Angolo in radianti}
+\begin{esempiot}{}{}
+	Calcolare  \[\cos\dfrac{\pi}{4}\] 
+\end{esempiot}
+Controllare che la calcolatrice è impostata in radianti\index{Radianti}\index{Coseno}.
+Basta verificare che 
+\begin{center}
+\begin{tabular}{ll}
+\tastopgreco\tastodiv\tasto{2}\tastouguale	&\num[round-precision=6,round-mode=places]{1.570796327}  \\ 
+	\tastosin\tastoans& 1 \\ 
+\end{tabular} 
+\end{center}
+ In caso contrario modificare le impostazioni.
+\begin{center}
+	
+	Non resta che procedere con il calcolo
+	
+\begin{tabular}{ll}
+	\tastopgreco\tastodiv\tasto{4}\tastouguale& \num[round-precision=6,round-mode=places]{0.785398163}  \\ 
+\tastocos\tastoans	&\num[round-precision=6,round-mode=places]{0.707106781}   \\ 
+\end{tabular} 
+\end{center}
+\[\cos\dfrac{\pi}{4}=\num[round-precision=6,round-mode=places]{0.707106781}\] 

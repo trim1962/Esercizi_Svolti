@@ -1,0 +1,182 @@
+\chapter{Sistemi lineari}
+\section{Metodo di sostituzione}
+\label{sec:metosdosostituzione}
+\label{cha:SistemiLineari}
+\begin{NodesList}
+\begin{align*}
+&\begin{cases}
+x+2y=1\AddNode\\
+2x+3y=3
+\end{cases}\\
+&\begin{cases}
+x=1-2y\AddNode\\
+2x+3y=3
+\end{cases}\\
+&\begin{cases}
+x=1-2y\\
+2(1-2y)+3y=3\AddNode\\
+\end{cases}\\
+&\begin{cases}
+x=1-2y\\
+2-4y+3y=3\AddNode\\
+\end{cases}\\
+&\begin{cases}
+y=-1\AddNode\\
+x=1-2y\\
+\end{cases}\\
+&\begin{cases}
+y=-1\\
+x=1-2(-1) \AddNode\\
+\end{cases}\\
+&\begin{cases}
+y=-1\\
+x=3 \AddNode\\
+\end{cases}\\
+\end{align*}
+\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}{Risolvo rispetto alla x}
+	\end{minipage}}
+\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}
+	Sostituisco la x nella seconda
+	\end{minipage}}
+\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}
+		Semplifico
+	\end{minipage}}
+\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}
+		Risolvo rispetto alla y
+	\end{minipage}}
+\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}
+		Sostituisco la y nella seconda
+	\end{minipage}}
+\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}
+	Risolvo rispetto alla x
+	\end{minipage}}
+\end{NodesList}
+\section{Metodo del confronto}
+\label{sec:metodoconfronto}
+\begin{NodesList}[dy=6pt]
+	\begin{align*}
+		&\begin{cases}
+			x+2y=1\AddNode\\
+			2x+3y=3\\
+		\end{cases}\\
+		&\\
+		&\begin{cases}
+			x=1-2y\AddNode\\
+			x=\dfrac{3}{2}-\dfrac{3}{2}y\AddNode[2]\\
+		\end{cases}\\
+		&\\
+		&\begin{cases}
+			x=\dfrac{3}{2}-\dfrac{3}{2}y\AddNode[2]\AddNode[3]\\
+			x=1-2y\AddNode[4]\\
+		\end{cases}\\
+		&\\
+		&\begin{cases}
+			1-2y=\dfrac{3}{2}-\dfrac{3}{2}y\AddNode[3]\AddNode[4]\\
+			x=1-2y\\
+		\end{cases}\\
+		&\\
+		&\begin{cases}
+			2-4y=3-3y\AddNode[4]\AddNode[5]\\
+			x=1-2y\\
+		\end{cases}\\
+		&\\
+		&\begin{cases}
+			3y-4y=3-2\AddNode[5]\AddNode[6]\\
+			x=1-2y\\
+		\end{cases}\\
+		&\\
+		&\begin{cases}
+			y=-1\AddNode[6]\AddNode[7]\\
+			x=1-2y\\
+		\end{cases}\\
+		&\\
+		&\begin{cases}
+			y=-1\\
+			x=3\AddNode[7]\
+		\end{cases}\\
+	\end{align*}
+	\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}{Risolvo rispetto alla x}
+		\end{minipage}}
+		\LinkNodes[margin=1 cm]{\begin{minipage}{2cm}{Risolvo rispetto alla x}
+			\end{minipage}}
+			\LinkNodes[margin=.5cm]{\begin{minipage}{2cm}{Confronto le due soluzioni}
+				\end{minipage}}
+				\LinkNodes[margin=3cm]{\begin{minipage}{2cm}{Confronto le due soluzioni}
+					\end{minipage}}
+					\LinkNodes[margin=3cm]{\begin{minipage}{2cm}{Semplifico}
+						\end{minipage}}
+						\LinkNodes[margin=3cm]{\begin{minipage}{2cm}{Semplifico}
+							\end{minipage}}
+							\LinkNodes[margin=3cm]{\begin{minipage}{2cm}{Risolvo rispetto a y}\end{minipage}}
+							\LinkNodes[margin=3cm]{\begin{minipage}{2cm}{Sostituisco e risolvo rispetto a x}\end{minipage}}
+						\end{NodesList}
+						\newpage
+\section{Metodo di somma sottrazione}
+\label{sec:metododommasottrazione}
+\begin{NodesList}%[dy=6pt]
+	\begin{align*}
+	&\begin{cases}
+	x+2y=1\AddNode\\
+	2x+3y=3
+	\end{cases}\\
+	&\\
+	&\begin{cases}
+	\tikzmark{1}2x+4y=2\AddNode\\
+	2x+3y=3
+	%\tikz[remember picture, overlay]{\node[below=0.1cm and 0cm of 1](3){};}
+	%\tikz[remember picture, overlay]{\node[below=0.1cm and 0cm of 2](4){};}
+	\tikz[remember picture, overlay]{\node[left=2cm and 0cm of 1](5){$2$};}
+	%\tikz[remember picture, overlay]{\node[below right=0.2cm and 0cm of 5](6) {$0-y=-13$};}
+	%\tikz[remember picture, overlay]{\path[draw] (3) edge  (4);}
+	\end{cases}\\
+	&\\
+	&\begin{cases}
+	\tikzmark{1}2x+4y=2\\%\AddNode\\
+	\tikzmark{0}2x+3y=3\tikzmark{2}
+	\tikz[remember picture, overlay]{\node[below=0.2cm and 0cm of 0](3){};}
+	\tikz[remember picture, overlay]{\node[below=0.2cm and 0cm of 2](4){};}
+	\tikz[remember picture, overlay]{\node[left=2cm and 0cm of 1](5){$2$};}
+	\tikz[remember picture, overlay]{\node[below right=0.4cm and -0.1cm of 0](6) {$0+y=-1$};}\AddNode\\
+	\tikz[remember picture, overlay]{\path[draw] (3) edge  (4);}
+	\end{cases}\\
+	\intertext{Riprendo il sistema iniziale}
+	&\begin{cases}
+	x+2y=1\AddNode[2]\\
+	2x+3y=3
+	\end{cases}\\
+	&\\
+	&\begin{cases}
+	\tikzmark{1}3x+6y=3\\
+	\tikzmark{6}4x+6y=6\AddNode[2]
+	%\tikz[remember picture, overlay]{\node[below=0.1cm and 0cm of 1](3){};}
+	%\tikz[remember picture, overlay]{\node[below=0.1cm and 0cm of 2](4){};}
+	\tikz[remember picture, overlay]{\node[left=2cm and 0cm of 1](5){$3$};}
+	\tikz[remember picture, overlay]{\node[left=2cm and 0cm of 6](7){$2$};}
+	%\tikz[remember picture, overlay]{\node[below right=0.2cm and 0cm of 5](6) {$0-y=-13$};}
+	%\tikz[remember picture, overlay]{\path[draw] (3) edge  (4);}
+	\end{cases}\\
+	&\\
+	&\begin{cases}
+	\tikzmark{1}3x+6y=3\\
+	\tikzmark{6}\tikzmark{0}4x+6y=6\tikzmark{2}
+	\tikz[remember picture, overlay]{\node[below=0.2cm and 0cm of 0](3){};}
+	\tikz[remember picture, overlay]{\node[below=0.2cm and 0cm of 2](4){};}
+	\tikz[remember picture, overlay]{\node[left=2cm and 0cm of 1](5){$3$};}
+	\tikz[remember picture, overlay]{\node[left=2cm and 0cm of 6](7){$2$};}
+	\tikz[remember picture, overlay]{\node[below right=0.4cm and -0.1cm of 0](6) {$-x+0=-3$};}\AddNode[2]\\
+	\tikz[remember picture, overlay]{\path[draw] (3) edge  (4);}
+	\end{cases}\\
+	\end{align*}
+	\LinkNodes[margin=2 cm]{\begin{minipage}{2cm}{Moltiplico la riga per 2}
+		\end{minipage}}
+		\LinkNodes[margin=2 cm]{\begin{minipage}{2cm}{Sottraggo la seconda riga alla prima e ottengo x}
+			\end{minipage}}
+			%	\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}{Ottengo y}
+			%		\end{minipage}}
+			\LinkNodes{\begin{minipage}{2cm}{Moltiplico la prima riga per 3, la seconda per 2}
+				\end{minipage}}
+				\LinkNodes[margin=2 cm]{\begin{minipage}{2cm}{Sottraggo la seconda riga alla prima e ottengo y}
+					\end{minipage}}
+					%	\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}{Ottengo x}
+					%		\end{minipage}}
+				\end{NodesList}

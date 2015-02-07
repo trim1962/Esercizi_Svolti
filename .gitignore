@@ -64,3 +64,6 @@ tabelle.primo.ptc
 *.slo
 *.sls
 *.out
+solutions/exercise-*.*
+*.fls
+*.records

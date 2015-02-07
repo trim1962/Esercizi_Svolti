@@ -1,0 +1,172 @@
+\chapter{Radicali}
+\section{Prodotti}
+\tcbstartrecording
+
+\begin{exercise}
+	Calcola il prodotto fra questi radicali:
+%	\begin{equation*}
+	$\sqrt[3]{a^4b}\cdot\sqrt[4]{ab^2}$
+%	\end{equation*}
+	\tcblower
+	Il prodotto è:
+\begin{NodesList}
+	\begin{align*}
+		&\sqrt[3]{a^4b}\cdot\sqrt[4]{ab^2}\AddNode\\
+		&\sqrt[12]{a^{16}b^4}\cdot\sqrt[12]{a^3b^6}\AddNode\\
+		&\sqrt[12]{a^{19}b^{10}}\AddNode\\
+		&\sqrt[12]{a^{19}b^{10}}\AddNode\\
+	\end{align*}
+	\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}{Riduco allo stesso indice}
+		\end{minipage}}
+		\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}
+				Moltiplico
+			\end{minipage}}
+			\LinkNodes[margin=4 cm]{\begin{minipage}{3cm}
+					$mcd(12,19,10)=1$
+				\end{minipage}}
+			
+						\end{NodesList}
+\end{exercise}
+
+%\begin{exercise}[no solution]
+%	It holds:
+%	\begin{equation*}
+%	\frac{d}{dx}\left(\ln|x|\right) = \frac{1}{x}.
+%	\end{equation*}
+%\end{exercise}
+
+\tcbstoprecording
+\newpage
+\section{Soluzioni Prodotti}
+\tcbinputrecords
+\newpage
+\section{Divisioni}
+\tcbstartrecording
+\begin{exercise}
+	Calcola il quoziente fra questi radicali:
+	\begin{equation*}
+	\sqrt[3]{a}\div\sqrt[3]{b}
+	\end{equation*}
+	\tcblower
+	Il divisione è:
+	\begin{NodesList}
+		\begin{align*}
+		&\sqrt[3]{a}\div\sqrt[3]{b}\AddNode\\
+		&\sqrt[3]{a}\cdot\sqrt[3]{\dfrac{1}{b}}\AddNode\\
+		&\sqrt[3]{\dfrac{a}{b}}\AddNode
+		\end{align*}
+		\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}{Trasformo in moltiplicazione}
+			\end{minipage}}
+			\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}
+					Stesso indice moltiplico
+				\end{minipage}}
+%				\LinkNodes[margin=4 cm]{\begin{minipage}{3cm}
+%						$mcd(12,19,10)=1$
+%					\end{minipage}}
+					
+				\end{NodesList}
+			\end{exercise}
+			
+\begin{exercise}
+	Calcola il quoziente fra questi radicali:
+	\begin{equation*}
+	\sqrt[3]{\dfrac{a}{b}}\div\sqrt[3]{\dfrac{c}{d}}
+	\end{equation*}
+	\tcblower
+	Il divisione è:
+	\begin{NodesList}
+		\begin{align*}
+		&\sqrt[3]{\dfrac{a}{b}}\div\sqrt[3]{\dfrac{c}{d}}\AddNode\\
+		&\sqrt[3]{\dfrac{a}{b}}\cdot\sqrt[3]{\dfrac{d}{c}}\AddNode\\
+		&\sqrt[3]{\dfrac{a}{b}\cdot\dfrac{d}{c}}\AddNode
+		\end{align*}
+		\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}{Trasformo in moltiplicazione}
+			\end{minipage}}
+			\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}
+					Stesso indice moltiplico
+				\end{minipage}}
+				%				\LinkNodes[margin=4 cm]{\begin{minipage}{3cm}
+				%						$mcd(12,19,10)=1$
+				%					\end{minipage}}
+				
+			\end{NodesList}
+		\end{exercise}
+\begin{exercise}
+	Calcola il quoziente fra questi radicali:
+	\begin{equation*}
+	\sqrt[3]{a}\div\sqrt[5]{b}
+	\end{equation*}
+	\tcblower
+	Il divisione è:
+	\begin{NodesList}
+		\begin{align*}
+		&\sqrt[3]{a}\div\sqrt[5]{b}\AddNode\\
+		&\sqrt[3]{a}\cdot\sqrt[5]{\dfrac{1}{b}}\AddNode\\
+		&\sqrt[15]{a^5}\cdot\sqrt[15]{\left(\dfrac{1}{b}\right)^3}\AddNode\\
+		&\sqrt[15]{\dfrac{a^5}{b^3}}\AddNode
+		\end{align*}
+		\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}{Trasformo in moltiplicazione}
+			\end{minipage}}
+			\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}
+					Riduco allo stesso indice
+				\end{minipage}}
+								\LinkNodes[margin=4 cm]{\begin{minipage}{3cm}
+										Moltiplico
+									\end{minipage}}
+				
+			\end{NodesList}
+		\end{exercise}
+	\begin{exercise}
+		Calcola il quoziente fra questi radicali:
+		\begin{equation*}
+		\sqrt[3]{\dfrac{a}{b}}\div\sqrt[5]{\dfrac{c}{d}}
+		\end{equation*}
+		\tcblower
+		Il divisione è:
+		\begin{NodesList}
+			\begin{align*}
+			&\sqrt[3]{\dfrac{a}{b}}\div\sqrt[5]{\dfrac{c}{d}}\AddNode\\
+			&\sqrt[3]{\dfrac{a}{b}}\cdot\sqrt[5]{\dfrac{d}{c}}\AddNode\\
+			&\sqrt[15]{\left( \dfrac{a}{b}\right)^5}\cdot\sqrt[15]{\left(\dfrac{c}{d}\right)^3 }\AddNode\\
+			&\sqrt[15]{\dfrac{a^5d^3}{b^5c^3}}\AddNode
+			\end{align*}
+			\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}{Trasformo in moltiplicazione}
+				\end{minipage}}
+				\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}
+						Riduco allo stesso indice
+					\end{minipage}}
+					\LinkNodes[margin=4 cm]{\begin{minipage}{3cm}
+							Moltiplico
+						\end{minipage}}
+						
+					\end{NodesList}
+				\end{exercise}
+	\begin{exercise}
+		Calcola il quoziente fra questi radicali:
+		\begin{equation*}
+		\sqrt[3]{2a^2}\div\sqrt[3]{\dfrac{4}{3}a^6b^3}
+		\end{equation*}
+		\tcblower
+		Il divisione è:
+		\begin{NodesList}
+			\begin{align*}
+			&\sqrt[3]{2a^2}\div\sqrt[3]{\dfrac{4}{3}a^6b^3}\AddNode\\
+			&\sqrt[3]{2a^2}\cdot\sqrt[3]{\dfrac{3}{4}\dfrac{1}{a^6b^3}}\AddNode\\
+			&\sqrt[3]{\dfrac{6}{4}\dfrac{a^2}{a^6b^3}}\AddNode\\
+			&\sqrt[3]{\dfrac{3}{2}\dfrac{1}{a^4b^3}}\AddNode
+			\end{align*}
+			\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}{Trasformo in moltiplicazione}
+				\end{minipage}}
+				\LinkNodes[margin=4 cm]{\begin{minipage}{2cm}
+						Stesso indice moltiplico
+					\end{minipage}}
+					\LinkNodes[margin=4 cm]{\begin{minipage}{3cm}
+							Semplifico
+						\end{minipage}}
+						
+					\end{NodesList}
+				\end{exercise}
+		\tcbstoprecording
+			\newpage
+			\section{Soluzioni divisioni}
+			\tcbinputrecords

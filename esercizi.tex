@@ -76,6 +76,12 @@
 \makeatother
 
 \listfiles
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%lunghezza arrotondamenti%%%%%
+\newcommand{\lungarrotandamento}{4}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{document}
 \frontmatter
 \begin{titlepage}
@@ -114,22 +120,18 @@
 \end{titlepage}
 \setcounter{page}{2}
 \input{../Mod_base/copyright}
-
 \tableofcontents 
-
 \cleardoublepage
 \addcontentsline{toc}{chapter}{\numberline{}\listtablename}
 \listoftables
-
 \cleardoublepage
 \addcontentsline{toc}{chapter}{\numberline{}\listfigurename}
 \listoffigures
-
 %\todototoc
 \cleardoublepage
 %\addcontentsline{toc}{chapter}{\numberline{}\listoftodos}
-\todototoc
-\listoftodos
+%\todototoc
+%\listoftodos
 \mainmatter%
 \opt{prima}{\input{primo/prima}}
 \opt{secondo}{\input{secondo/secondo}}

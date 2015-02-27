@@ -8,7 +8,7 @@ Quando si parla di calcolatrice si parla di una calcolatrice scientifica. Devono
 \end{tabular} 
 \end{center}
 
-In genere per le funzioni inverse si usa una combinazione di tasti \tastoshift  
+In genere per le funzioni inverse si usa una combinazione di tasti \tastoshift 
 
 \begin{center}
 	\begin{tabular}{ccc}
@@ -20,50 +20,50 @@ La calcolatrice deve gestire i radianti, i gradi con un tasto mode \tastomode e 
 \section{Trovare valore funzione}
 \subsection{Angolo in gradi}
 \begin{esempiot}{}{}
-Calcolare  \[\sin\ang{38;28;50}\] 
+Calcolare \[\sin\ang{38;28;50}\] 
 \end{esempiot}
 Controllare che la calcolatrice è impostata in gradi sessagesimali\index{Grado!Sessagesimale}.
 Basta verificare che \testgradi In caso contrario modificare le impostazioni. 
 
-Si inizia convertendo  i gradi in forma sessadecimale\index{Grado!Sessagesimale}\index{Grado!Sessadecimale}\index{Seno}
+Si inizia convertendo i gradi in forma sessadecimale\index{Grado!Sessagesimale}\index{Grado!Sessadecimale}\index{Seno}
 
 \begin{align*}
 &\phantom{=}\ang{38}+\left(\dfrac{28}{60}\right)^{\degree}+\left(\dfrac{50}{3600}\right)^{\degree }=\\
 &=\ang{38}+\left(\dfrac{28\cdot60+50}{3600}\right)^{\degree}=\\
 &=\ang{38}+\left(\dfrac{1680+50}{3600}\right)^{\degree}=\\
 &=\ang{38}+\left(\dfrac{1730}{3600}\right)^{\degree}=\\
-&=\ang[round-precision=6,round-mode=places]{38.4805556}
+&=\ang[round-precision=\lungarrotandamento,round-mode=places]{38.4805556}
 \end{align*}
 usando la calcolatrice
 
 \begin{center}
 \begin{tabular}{ll}
-\tasto{28}\tastoper\tasto{60}\tastouguale	& 1680 \\ 
-\tastoans\tastopiu\tasto{50}\tastouguale	& 1730 \\
-\tastoans\tastodiv\tasto{3600}\tastouguale	& \num[round-precision=6,round-mode=places]{0.480555555} \\
-\tastoans\tastopiu\tasto{38}\tastouguale&\num[round-precision=6,round-mode=places]{38.480555555} \\
+\tasto{28}\tastoper\tasto{60}\tastouguale& 1680 \\ 
+\tastoans\tastopiu\tasto{50}\tastouguale& 1730 \\
+\tastoans\tastodiv\tasto{3600}\tastouguale& \num[round-precision=\lungarrotandamento,round-mode=places]{0.480555555} \\
+\tastoans\tastopiu\tasto{38}\tastouguale&\num[round-precision=\lungarrotandamento,round-mode=places]{38.480555555} \\
 \end{tabular}
 \end{center} 
 
 Infine
 
- \tastosin \tastoans\tastouguale e ottenere
-\[\sin\ang{38;28;50}=\num[round-precision=6,round-mode=places]{0.622249007}\] 
+ \tastosin\tastoans\tastouguale e ottenere
+\[\sin\ang{38;28;50}=\num[round-precision=\lungarrotandamento,round-mode=places]{0.622249007}\] 
 
 \begin{esempiot}{}{}
-	Calcolare  \[\tan\ang{120;30;40}\] 
+	Calcolare \[\tan\ang{120;30;40}\] 
 \end{esempiot}
 Controllare che la calcolatrice è impostata in gradi sessagesimali\index{Grado!Sessagesimale}.
-Basta verificare che  \testgradi. In caso contrario modificare le impostazioni. 
+Basta verificare che \testgradi. In caso contrario modificare le impostazioni. 
 
-Si inizia convertendo  i gradi in forma sessadecimale\index{Grado!Sessagesimale}\index{Grado!Sessadecimale}\index{Tangente}
+Si inizia convertendo i gradi in forma sessadecimale\index{Grado!Sessagesimale}\index{Grado!Sessadecimale}\index{Tangente}
 
 \begin{align*}
 &\phantom{=}\ang{120}+\left(\dfrac{30}{60}\right)^{\degree}+\left(\dfrac{40}{3600}\right)^{\degree }=\\
 &=\ang{120}+\left(\dfrac{30\cdot60+40}{3600}\right)^{\degree}=\\
 &=\ang{120}+\left(\dfrac{1800+40}{3600}\right)^{\degree}=\\
 &=\ang{120}+\left(\dfrac{1730}{3600}\right)^{\degree}=\\
-&=\ang[round-precision=6,round-mode=places]{120.5111111}
+&=\ang[round-precision=\lungarrotandamento,round-mode=places]{120.5111111}
 \end{align*}
 
 usando la calcolatrice
@@ -72,16 +72,16 @@ usando la calcolatrice
 	\begin{tabular}{ll}
 		\tasto{30}\tastoper\tasto{60}\tastouguale	& 1800 \\ 
 		\tastoans\tastopiu\tasto{40}\tastouguale	& 1840 \\
-		\tastoans\tastodiv\tasto{3600}\tastouguale	& \num[round-precision=6,round-mode=places]{0.511111111} \\
-		\tastoans\tastopiu\tasto{120}\tastouguale&\num[round-precision=6,round-mode=places]{120.511111111} \\
+		\tastoans\tastodiv\tasto{3600}\tastouguale	& \num[round-precision=\lungarrotandamento,round-mode=places]{0.511111111} \\
+		\tastoans\tastopiu\tasto{120}\tastouguale&\num[round-precision=\lungarrotandamento,round-mode=places]{120.511111111} \\
 	\end{tabular}
 \end{center} 
 
 Infine \tastotan \tastoans\tastouguale e ottenere
-\[\tan\ang{120;30;40}=\num[round-precision=6,round-mode=places]{-1.69610537}\] 
+\[\tan\ang{120;30;40}=\num[round-precision=\lungarrotandamento,round-mode=places]{-1.69610537}\] 
 \subsection{Angolo in radianti}
 \begin{esempiot}{}{}
-	Calcolare  \[\cos\dfrac{\pi}{4}\] 
+	Calcolare \[\cos\dfrac{\pi}{4}\] 
 \end{esempiot}
 Controllare che la calcolatrice è impostata in radianti\index{Radianti}\index{Coseno}.
 Basta verificare che 
@@ -92,13 +92,13 @@ Non resta che procedere con il calcolo
 	
 \begin{center}
 \begin{tabular}{ll}
-	\tastopgreco\tastodiv\tasto{4}\tastouguale& \num[round-precision=6,round-mode=places]{0.785398163}  \\ 
-\tastocos\tastoans\tastouguale	&\num[round-precision=6,round-mode=places]{0.707106781}   \\ 
+	\tastopgreco\tastodiv\tasto{4}\tastouguale& \num[round-precision=\lungarrotandamento,round-mode=places]{0.785398163} \\ 
+\tastocos\tastoans\tastouguale	&\num[round-precision=\lungarrotandamento,round-mode=places]{0.707106781} \\ 
 \end{tabular} 
 \end{center}
-\[\cos\dfrac{\pi}{4}=\num[round-precision=6,round-mode=places]{0.707106781}\] 
+\[\cos\dfrac{\pi}{4}=\num[round-precision=\lungarrotandamento,round-mode=places]{0.707106781}\] 
 \begin{esempiot}{}{}
-	Calcolare  \[\tan\SI[round-precision=4,round-mode=places]{1.4589}{\radian}\] 
+	Calcolare \[\tan\SI[round-precision=4,round-mode=places]{1.4589}{\radian}\] 
 \end{esempiot}
 Controllare che la calcolatrice è impostata in radianti\index{Radianti}\index{Tangente}.
 Basta verificare che 
@@ -109,46 +109,51 @@ Non resta che procedere con il calcolo
 
 \begin{center}
 	\begin{tabular}{ll}
-	  \tastotan\tasto{\num[round-precision=4,round-mode=places]{1.4589}}\tastouguale& \num[round-precision=6,round-mode=places]{8.899513904}\\ 
+	 \tastotan\tasto{\num[round-precision=4,round-mode=places]{1.4589}}\tastouguale& \num[round-precision=\lungarrotandamento,round-mode=places]{8.899513904}\\ 
 	\end{tabular} 
 \end{center}
 otteniamo
- \[\tan\SI[round-precision=4,round-mode=places]{1.4589}{\radian}=\num[round-precision=6,round-mode=places]{8.899513904}\] 
+ \[\tan\SI[round-precision=4,round-mode=places]{1.4589}{\radian}=\num[round-precision=\lungarrotandamento,round-mode=places]{8.899513904}\] 
  \section{Trovare l'angolo nota la funzione}
  \subsection{Angolo in gradi}
  \begin{esempiot}{}{}
- Trovare l'angolo per cui \[\cos\alpha=\num[round-precision=6,round-mode=places]{0.778934}\]
+ Trovare l'angolo per cui \[\cos x=\num[round-precision=\lungarrotandamento,round-mode=places]{0.778934}\]
  \end{esempiot}
-Controllare che la calcolatrice è impostata in gradi  sessagesimali\index{Grado!Sessagesimale}.
-Basta verificare che  \testgradi In caso contrario modificare le impostazioni.
+Controllare che la calcolatrice è impostata in gradi sessagesimali\index{Grado!Sessagesimale}.
+Basta verificare che \testgradi In caso contrario modificare le impostazioni.
+
+Le soluzioni sono 
+\[\begin{cases}
+	x_1=+\alpha+k\ang{360}\\
+	x_2=-\alpha+k\ang{360}\\
+\end{cases}\]
+Calcolo $\alpha$
 
 \begin{center}
+		\begin{tabular}{ll}
+		\tastoicos\tasto{\num[round-precision=\lungarrotandamento,round-mode=places]{0.778934}}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{38.8369232}{\degree}\\
+		\end{tabular}
+\end{center}
+
+Converto in gradi sessagesimali
+
+\begin{center}		
 	\begin{tabular}{ll}
-		\tastoicos\tasto{\num[round-precision=6,round-mode=places]{0.778934}}\tastouguale&\num[round-precision=6,round-mode=places]{38.8369232}\\  \tastoans\tastomeno\tasto{38}\tastouguale&\num[round-precision=6,round-mode=places]{0.836923195}\\
-		\tastoans\tastoper\tasto{60}\tastouguale&\num[round-precision=6,round-mode=places]{50.21539175}\\
-		\tastoans\tastomeno\tasto{50}\tastouguale&\num[round-precision=6,round-mode=places]{0.215391754}\\
-		\tastoans\tastoper\tasto{60}\tastouguale&\num[round-precision=6,round-mode=places]{12.929350526}\\
+		\tastoans\tastomeno\tasto{38}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.810314895}{\degree}\\
+		\tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{50.21539175}{\arcminute}\\
+		\tastoans\tastomeno\tasto{50}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.215391754}{\arcminute}\\
+		\tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{12.929350526}{\arcsecond}\\
 	\end{tabular} 
 \end{center}
 \[\alpha=\ang{38;50;12}\]
- \begin{esempiot}{}{}
- 	Trovare l'angolo per cui \[\tan\alpha=\num[round-precision=6,round-mode=places]{1.414213562}\]
- \end{esempiot}
- Controllare che la calcolatrice è impostata in gradi  sessagesimali\index{Grado!Sessagesimale}.
- Basta verificare che  \testgradi In caso contrario modificare le impostazioni.
- 
- \begin{center}
- 	\begin{tabular}{ll}
- 		\tastoitan\tasto{\num[round-precision=6,round-mode=places]{1.414213562}}\tastouguale&\num[round-precision=6,round-mode=places]{54.73561032}\\  \tastoans\tastomeno\tasto{54}\tastouguale&\num[round-precision=6,round-mode=places]{0.735610317}\\
- 		\tastoans\tastoper\tasto{60}\tastouguale&\num[round-precision=6,round-mode=places]{44.13661903}\\
- 		\tastoans\tastomeno\tasto{44}\tastouguale&\num[round-precision=6,round-mode=places]{0.136619034}\\
- 		\tastoans\tastoper\tasto{60}\tastouguale&\num[round-precision=6,round-mode=places]{8.197142083}\\
- 	\end{tabular} 
- \end{center}
- \[\alpha=\ang{54;44;8}\]
+le soluzioni sono quindi
+\[\begin{cases}
+x_1=+\ang{38;50;12}+k\ang{360}\\
+x_2=-\ang{38;50;12}+k\ang{360}\\
+\end{cases}\]
  \subsection{Angolo in radianti}
  \begin{esempiot}{}{}
- 	Calcolare  \[\sin\alpha=\SI[round-precision=6,round-mode=places]{-0.783942}{\radian}\] 
+ 	Calcolare \[\sin\alpha=\num[round-precision=\lungarrotandamento,round-mode=places]{-0.783942}\] 
  \end{esempiot}
  Controllare che la calcolatrice è impostata in radianti\index{Radianti}\index{Seno}.
  Basta verificare che 
@@ -159,24 +164,418 @@ Basta verificare che  \testgradi In caso contrario modificare le impostazioni.
  
  \begin{center}
  	\begin{tabular}{ll}
- 		\tastoisin\tasto{\num[round-precision=6,round-mode=places]{-0.783942}}\tastouguale&\num[round-precision=6,round-mode=places]{-0.900990129}\\  \tasto{2}\tastoper\tastopgreco\tastopiu\tastoans\tastouguale&\num[round-precision=6,round-mode=places]{5.382195178}\\
+ 		\tastoisin\tasto{\num[round-precision=\lungarrotandamento,round-mode=places]{-0.783942}}\tastouguale&\num[round-precision=\lungarrotandamento,round-mode=places]{-0.900990129}\\ \tasto{2}\tastoper\tastopgreco\tastopiu\tastoans\tastouguale&\num[round-precision=\lungarrotandamento,round-mode=places]{5.382195178}\\
  	\end{tabular} 
  \end{center}
- \[\rho= \SI[round-precision=6,round-mode=places]{-0.900990129}{\radian}\]
- \[\rho= \SI[round-precision=6,round-mode=places]{5.382195178}{\radian}\]
-  \begin{esempiot}{}{}
-  	Calcolare  \[\cos\alpha=\SI[round-precision=6,round-mode=places]{-0.478973}{\radian}\] 
-  \end{esempiot}
-  Controllare che la calcolatrice è impostata in radianti\index{Radianti}\index{Seno}.
-  Basta verificare che 
-  \testradianti
-  In caso contrario modificare le impostazioni.
-  
-  Non resta che procedere con il calcolo
-  
+ \[\rho= \SI[round-precision=\lungarrotandamento,round-mode=places]{-0.900990129}{\radian}\]
+ \[\rho= \SI[round-precision=\lungarrotandamento,round-mode=places]{5.382195178}{\radian}\]
+ 
+
+\newpage
+ \section{Esercizi equazioni elementari}
+ \tcbstartrecording
+ \begin{exercise}
+Trovare l'angolo in gradi per cui $\cos x=\num[round-precision=\lungarrotandamento,round-mode=places]{-0.7548329}$
+\tcblower
+$\cos x=\num[round-precision=\lungarrotandamento,round-mode=places]{-0.7548329}$
+
+ Controllare che la calcolatrice è impostata in gradi sessagesimali\index{Grado!Sessagesimale}.
+ Basta verificare che \testgradi 
+ 
+ In caso contrario modificare le impostazioni.
+ 
+ Le soluzioni sono 
+ \[\begin{cases}
+ x_1=+\alpha+k\ang{360}\\
+ x_2=-\alpha+k\ang{360}\\
+ \end{cases}\]
+ Calcolo $\alpha$
+ 
+ \begin{center}
+ 	\begin{tabular}{ll}
+ 		\tastoicos\tasto{\num[round-precision=\lungarrotandamento,round-mode=places]{-0.7548329}}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{139.0107711}{\degree}
+ 	\end{tabular}
+ \end{center}
+ 
+ Converto in gradi sessagesimali
+ 
+ \begin{center}
+ 	\begin{tabular}{ll}
+ 		\tastoans\tastomeno\tasto{139}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.010771083}{\degree}\\
+ 		\tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.646265034}{\arcminute}\\
+ 		\tastoans\tastomeno\tasto{0}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.646265034}{\arcminute}\\
+ 		\tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{38.77590204}{\arcsecond}\\
+ 	\end{tabular} 
+ \end{center}
+ \[\alpha=\ang{139;0;38}\]
+ le soluzioni sono quindi
+ \[\begin{cases}
+ x_1=+\ang{139;0;38}+k\ang{360}\\
+ x_2=-\ang{139;0;38}+k\ang{360}\\
+ \end{cases}\]
+ \end{exercise}
+ \begin{exercise}
+ 	Trovare l'angolo in gradi per cui $\sin x=\num[round-precision=\lungarrotandamento,round-mode=places]{0.666666666}$
+\tcblower
+ $\sin x=\num[round-precision=\lungarrotandamento,round-mode=places]{0.666666666}$
+ 
+ Controllare che la calcolatrice è impostata in gradi sessagesimali\index{Grado!Sessagesimale}\index{Seno}.
+ 
+ Basta verificare che \testgradi 
+ 
+ In caso contrario modificare le impostazioni.
+ 
+ Le soluzioni sono 
+ \[\begin{cases}
+ x_1=\alpha+k\ang{360}\\
+ x_2=\ang{180}-\alpha+k\ang{360}\\
+ \end{cases}\]
+ Calcolo $\alpha$
   \begin{center}
-  	\begin{tabular}{ll}
-  		\tastoicos\tasto{\num[round-precision=6,round-mode=places]{-0.4788973}}\tastouguale&\num[round-precision=6,round-mode=places]{2.070280734}\\  
-  	\end{tabular} 
-  \end{center}
-  \[\rho= \SI[round-precision=6,round-mode=places]{2.070280734}{\radian}\]
+ 	\begin{tabular}{ll}
+ 		\tastoisin\tasto{\num[round-precision=\lungarrotandamento,round-mode=places]{0.666666666}}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{41.8103149}{\degree}\\
+ 	\end{tabular}
+ \end{center}
+ \[\begin{cases}
+ x_1=\alpha+k\ang{360}=\SI[round-precision=\lungarrotandamento,round-mode=places]{41.8103149}{\degree}+k\ang{360}\\
+ x_2=\ang{180}-\alpha+k\ang{360}=\SI[round-precision=\lungarrotandamento,round-mode=places]{138.1896851}{\degree}+k\ang{360}\\
+ \end{cases}\]
+ 
+ Converto in gradi sessagesimali $x_1$
+ 
+ \begin{center}		
+ 	\begin{tabular}{ll}
+ 		\tastoans\tastomeno\tasto{41}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.810314895}{\degree}\\
+ 		\tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{48.61889374}{\arcminute}\\
+ 		\tastoans\tastomeno\tasto{48}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.68893743}{\arcminute}\\
+ 		\tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{37.13362463}{\arcsecond}\\
+ 	\end{tabular} 
+ \end{center}
+ \[x_1=\ang{41;48;37}\]
+ 
+ Converto in gradi sessagesimali $x_2$
+ 
+ \begin{center}		
+ 	\begin{tabular}{ll}
+ \tastoans\tastomeno\tasto{138}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.189685104}{\degree}\\
+ \tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{11.38110625}{\arcminute}\\
+ \tastoans\tastomeno\tasto{48}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.381106252}{\arcminute}\\		\tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{22.866375512}{\arcsecond}\\
+ 	\end{tabular} 
+ \end{center}
+ \[x_2=\ang{138;11;22}\]
+ 
+ le soluzioni sono quindi
+ \[\begin{cases}
+ x_1=\ang{41;48;37}+k\ang{360}\\
+ x_2=\ang{138;11;22}+k\ang{360}\\
+ \end{cases}\]
+ \end{exercise}
+ \begin{exercise}
+ 	Trovare l'angolo in gradi per cui $\sin x=\num[round-precision=2,round-mode=places]{-0.75}$
+\tcblower
+ $\sin x=\num[round-precision=2,round-mode=places]{-0.75}$
+
+ Controllare che la calcolatrice è impostata in gradi sessagesimali\index{Grado!Sessagesimale}\index{Seno}.
+ 
+ Basta verificare che 
+ \testgradi 
+ 
+ In caso contrario modificare le impostazioni.
+ 
+ Le soluzioni sono 
+ \[\begin{cases}
+ x_1=\alpha+k\ang{360}\\
+ x_2=\ang{180}-\alpha+k\ang{360}\\
+ \end{cases}\]
+ Calcolo $\alpha$
+ 
+ \begin{center}
+ 	\begin{tabular}{ll}
+ 		\tastoisin\tasto{\num[round-precision=2,round-mode=places]{-0.75}}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{-48.59037789}{\degree}
+ 	\end{tabular}
+ \end{center}
+ 
+ \[\begin{cases}
+ x_1=\alpha+k\ang{360}=\SI[round-precision=\lungarrotandamento,round-mode=places]{-48.59037789}{\degree}+k\ang{360}=\SI[round-precision=\lungarrotandamento,round-mode=places]{311.4096221}{\degree}+k\ang{360}\\
+ x_2=-\ang{180}+\alpha+k\ang{360}=\SI[round-precision=\lungarrotandamento,round-mode=places]{228.5903789}{\degree}+k\ang{360}\\
+ \end{cases}\]
+ 
+ Converto in gradi sessagesimali $x_1$
+ 
+ \begin{center}		
+ 	\begin{tabular}{ll}
+ 		\tastoans\tastomeno\tasto{311}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.409622109}{\degree}\\
+ 		\tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{24.57732655}{\arcminute}\\
+ 		\tastoans\tastomeno\tasto{48}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.577326552}{\arcminute}\\
+ 		\tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{34.63959312}{\arcsecond}\\
+ 	\end{tabular} 
+ \end{center}
+ \[x_1=\ang{311;24;34}\]
+ 
+ Converto in gradi sessagesimali $x_2$
+ 
+ \begin{center}		
+ 	\begin{tabular}{ll}
+ 		\tastoans\tastomeno\tasto{228}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.59037789}{\degree}\\
+ 		\tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{35.42267345}{\arcminute}\\
+ 		\tastoans\tastomeno\tasto{48}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.422673448}{\arcminute}\\
+ 		\tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{25.36040688}{\arcsecond}\\
+ 	\end{tabular} 
+ \end{center}
+ \[x_2=\ang{228;35;25}\]
+ 
+ le soluzioni sono quindi
+ \[\begin{cases}
+ x_1=\ang{311;24;34}+k\ang{360}\\
+ x_2=\ang{228;35;25}+k\ang{360}\\
+ \end{cases}\]
+ \end{exercise}
+ \begin{exercise}
+Trovare l'angolo in gradi per cui $\tan x=\num[round-precision=\lungarrotandamento,round-mode=places]{1.414213562}$
+\tcblower
+$\tan x=\num[round-precision=\lungarrotandamento,round-mode=places]{1.414213562}$
+
+ Controllare che la calcolatrice è impostata in gradi sessagesimali\index{Grado!Sessagesimale}.
+ Basta verificare che 
+ 
+\testgradi 
+ 
+In caso contrario modificare le impostazioni.
+
+Le soluzioni sono \[x_1=\alpha+k\ang{180}\]
+
+Converto in gradi sessagesimali $x_1$
+ \begin{center}
+ 	\begin{tabular}{ll}
+ \tastoitan\tasto{\num[round-precision=\lungarrotandamento,round-mode=places]{1.414213562}}
+ \tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{54.73561032}{\degree}\\
+ \end{tabular}
+\end{center}	
+
+ Converto in gradi sessagesimali $x_1$
+
+ \begin{center}
+ 	\begin{tabular}{ll}
+ 		 \tastoans\tastomeno\tasto{54}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.735610317}{\degree}\\
+ 		\tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{44.13661903}{\arcminute}\\
+ 		\tastoans\tastomeno\tasto{44}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.136619034}{\arcminute}\\
+ 		\tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{8.197142083}{\arcsecond}\\
+ 	\end{tabular} 
+ \end{center}
+Le soluzioni sono \[x_1=\ang{54;44;8}+k\ang{180}\]
+ \end{exercise}
+ \begin{exercise}
+ Trovare l'angolo in gradi per cui $\tan x=\num[round-precision=\lungarrotandamento,round-mode=places]{-3.464101615}$
+ \tcblower
+
+ $\tan x=\num[round-precision=\lungarrotandamento,round-mode=places]{-3.464101615}$
+ 
+ Controllare che la calcolatrice è impostata in gradi sessagesimali\index{Grado!Sessagesimale}.
+ 
+ Basta verificare che 
+ \testgradi 
+ 
+ In caso contrario modificare le impostazioni.
+ 
+ Le soluzioni sono \[x_1=\alpha+k\ang{180}\]
+ 
+ Converto in gradi sessagesimali $x_1$
+ \begin{center}
+ 	\begin{tabular}{ll}
+ 		\tastoitan\tasto{\num[round-precision=\lungarrotandamento,round-mode=places]{-3.464101615}}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{-73.89788625}{\degree}\\
+ 	\end{tabular}
+ \end{center}	
+ 
+ $x_1=\ang{180}\SI[round-precision=\lungarrotandamento,round-mode=places]{-73.89788625}{\degree}=\SI[round-precision=\lungarrotandamento,round-mode=places]{106.1021138}{\degree}$
+ 
+ Converto in gradi sessagesimali $x_1$
+ \begin{center}
+ 	\begin{tabular}{ll}
+ 		\tastoans\tastomeno\tasto{106}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.10211375}{\degree}\\
+ 		\tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{6.126825}{\arcminute}\\
+ 		\tastoans\tastomeno\tasto{6}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.126825}{\arcminute}\\
+ 		\tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{7.6095}{\arcsecond}\\
+ 	\end{tabular} 
+ \end{center}
+ Le soluzioni sono \[x_1=\ang{106;6;7}+k\ang{180}\]
+ \end{exercise}
+  \begin{exercise}[no solution]
+  	Trovare l'angolo in gradi per cui $\tan x=\dfrac{\sqrt{3}}{2}$
+\end{exercise}
+ \begin{exercise}[no solution]
+ 	Trovare l'angolo in gradi per cui $\cos x=\dfrac{3}{5}$
+ \end{exercise}
+  \begin{exercise}[no solution]
+  	Trovare l'angolo in gradi per cui $\sin x=-\dfrac{\sqrt{3}}{2}$
+  	\end{exercise}
+ \begin{exercise}
+ Trovare l'angolo in radianti per cui $\cos x=\num[round-precision=\lungarrotandamento,round-mode=places]{-0.478973}$
+  \tcblower
+ $\cos x=\num[round-precision=\lungarrotandamento,round-mode=places]{-0.478973}$
+ 
+ Controllare che la calcolatrice è impostata in radianti\index{Radianti}\index{Coseno}.
+ 
+ Basta verificare che 
+ 
+ \testradianti
+ 
+ In caso contrario modificare le impostazioni.
+ 
+ Non resta che procedere con il calcolo.
+ 
+ Le soluzioni sono 
+ \[\begin{cases}
+ x_1=+\alpha+2k\pi\\
+ x_2=-\alpha+2k\pi\\
+ \end{cases}\]
+ Calcolo $\alpha$
+ \begin{center}
+ 	\begin{tabular}{ll}
+ 		\tastoicos\tasto{\num[round-precision=\lungarrotandamento,round-mode=places]{-0.4788973}}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{2.070280734}{\radian}\\ 
+ 	\end{tabular} 
+ \end{center}
+ \[\alpha= \SI[round-precision=\lungarrotandamento,round-mode=places]{2.070280734}{\radian}\]
+  \[\begin{cases}
+  x_1=+\SI[round-precision=\lungarrotandamento,round-mode=places]{2.070280734}+2k\pi \radian\\
+  x_2=-\SI[round-precision=\lungarrotandamento,round-mode=places]{2.070280734}+2k\pi \radian\\
+  \end{cases}\]
+ \end{exercise}
+ \begin{exercise}
+ Trovare l'angolo in radianti per cui $\sin 3x=\num[round-precision=2,round-mode=places]{0.48}$
+ 	\tcblower
+$\sin 3x=\num[round-precision=2,round-mode=places]{0.48}$ 	
+ 	
+ Controllare che la calcolatrice è impostata in radianti\index{Radianti}\index{Seno}.
+ 	
+ 	Basta verificare che 
+ 	\testradianti
+ 	
+ 	In caso contrario modificare le impostazioni.
+ 	
+ 	Non resta che procedere con il calcolo.
+ 	
+ 	Le soluzioni sono 
+ 	\[\begin{cases}
+ 	x_1=\alpha+2k\pi\\
+ 	x_2=\pi-\alpha+2k\pi\\
+ 	\end{cases}\]
+ 	Calcolo $\alpha$
+ 	
+ 	\begin{center}
+ 		\begin{tabular}{ll}
+ \tastoisin\tasto{\num[round-precision=2,round-mode=places]{0.48}}
+ \tastouguale&\num[round-precision=\lungarrotandamento,round-mode=places]{0.500654712}\\ 
+ 		\end{tabular} 
+ 	\end{center}
+ 	\[\alpha= \SI[round-precision=\lungarrotandamento,round-mode=places]{0.500654712}{\radian}\]
+ 	\begin{align*}
+  	3x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.500654712}+2k\pi \radian\\
+  	x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.500654712}+\dfrac{2}{3}k\pi \radian\\
+ 	\end{align*}
+ 	\begin{align*}
+ 	3x_2&=\pi-\SI[round-precision=\lungarrotandamento,round-mode=places]{0.500654712}+2k\pi \radian\\
+ 	3x_2&=\SI[round-precision=\lungarrotandamento,round-mode=places]{2.640937182}+2k\pi \radian\\
+ 	x_2&=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.880312394}+\dfrac{2}{3}k\pi \radian\\
+ 	\end{align*}
+ Le soluzioni sono
+ 
+\[ \begin{cases}
+x_1=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.500654712}+\dfrac{2}{3}k\pi \radian\\
+
+x_2=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.880312394}+\dfrac{2}{3}k\pi \radian\\
+ \end{cases}\]
+ \end{exercise}
+  \begin{exercise}
+  	Trovare l'angolo in radianti per cui $\sin 2x=\num[round-precision=3,round-mode=places]{-0.128}$
+  	\tcblower
+  	$\sin 2x=\num[round-precision=3,round-mode=places]{-0.128}$ 	
+  	
+  	Controllare che la calcolatrice è impostata in radianti\index{Radianti}\index{Seno}.
+  	
+  	Basta verificare che 
+  	\testradianti
+  	
+  	In caso contrario modificare le impostazioni.
+  	
+  	Non resta che procedere con il calcolo.
+  	
+  	Le soluzioni sono 
+  	\[\begin{cases}
+  	x_1=\alpha+2k\pi\\
+  	x_2=\pi-\alpha+2k\pi\\
+  	\end{cases}\]
+  	Calcolo $\alpha$
+  	
+  	\begin{center}
+  		\begin{tabular}{ll}
+  			\tastoisin\tasto{\num[round-precision=3,round-mode=places]{-0.128}}
+  			\tastouguale&\num[round-precision=\lungarrotandamento,round-mode=places]{-0.128352127}	
+  		\end{tabular} 
+  	\end{center}
+  	\[\alpha=2\pi+ \SI[round-precision=\lungarrotandamento,round-mode=places]{-0.128352127}{\radian}\]
+  	\begin{align*}
+  	2x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{6.154833179}+2k\pi \radian\\
+  	x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{3.205768717}+k\pi \radian\\
+  	\end{align*}
+  	\begin{align*}
+  	2x_2&=\pi+\SI[round-precision=\lungarrotandamento,round-mode=places]{3.269944781}+2k\pi \radian\\
+  	2x_2&=\SI[round-precision=\lungarrotandamento,round-mode=places]{2.640937182}+2k\pi \radian\\
+  	x_2&=\SI[round-precision=\lungarrotandamento,round-mode=places]{1.63497239}+k\pi \radian\\
+  	\end{align*}
+  	Le soluzioni sono
+  	
+  	\[ \begin{cases}
+  	x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{3.205768717}+k\pi \radian\\
+  	
+  		x_2&=\SI[round-precision=\lungarrotandamento,round-mode=places]{1.63497239}+k\pi \radian\\ \radian\\
+  	\end{cases}\]
+  \end{exercise}
+ \begin{exercise}
+ 	Trovare l'angolo in radianti per cui $\cos 2x=\num[round-precision=3,round-mode=places]{0.128}$
+ 	\tcblower
+ 	$\cos 2x=\num[round-precision=3,round-mode=places]{0.128}$ 	
+ 	
+ 	Controllare che la calcolatrice è impostata in radianti\index{Radianti}\index{Coseno}.
+ 	
+ 	Basta verificare che 
+ 	\testradianti
+ 	
+ 	In caso contrario modificare le impostazioni.
+ 	
+ 	Non resta che procedere con il calcolo.
+ 	
+ 	Le soluzioni sono 
+ 	\[\begin{cases}
+ 	x_1=\alpha+2k\pi\\
+ 	x_2=-\alpha+2k\pi\\
+ 	\end{cases}\]
+ 	Calcolo $\alpha$
+ 	
+ 	\begin{center}
+ 		\begin{tabular}{ll}
+ 			\tastoicos\tasto{\num[round-precision=3,round-mode=places]{0.128}}
+ 			\tastouguale&\num[round-precision=\lungarrotandamento,round-mode=places]{1.442444199}	
+ 		\end{tabular} 
+ 	\end{center}
+ 	\[\alpha=2\pi+ \SI[round-precision=\lungarrotandamento,round-mode=places]{1.442444199}{\radian}\]
+ 	\begin{align*}
+ 	2x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{1.442444199}+2k\pi \radian\\
+ 	x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.721222099}+k\pi \radian\\
+ 	\end{align*}
+% 	\begin{align*}
+% 	2x_2&=\pi+\SI[round-precision=\lungarrotandamento,round-mode=places]{3.269944781}+2k\pi \radian\\
+% 	2x_2&=\SI[round-precision=\lungarrotandamento,round-mode=places]{2.640937182}+2k\pi \radian\\
+% 	x_2&=\SI[round-precision=\lungarrotandamento,round-mode=places]{1.63497239}+k\pi \radian\\
+% 	\end{align*}
+ 	Le soluzioni sono
+ 	
+ 	\[ \begin{cases}
+ 	x_1&=+\SI[round-precision=\lungarrotandamento,round-mode=places]{1.442444199}+k\pi \radian\\
+ 	
+ 	x_2&=-\SI[round-precision=\lungarrotandamento,round-mode=places]{1.442444199}+k\pi \radian\\ \radian\\
+ 	\end{cases}\]
+ \end{exercise}
+ 	\tcbstoprecording
+ 	\newpage
+ 	\section{Soluzioni equazioni goniometriche elementari}
+ 	\tcbinputrecords

@@ -318,14 +318,14 @@ $\sin 3x=\num[round-precision=2,round-mode=places]{0.48}$
  
 \[\begin{cases}
 x_1=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.166884904}+\dfrac{2}{3}k\pi \radian\\
-
+\\
 x_2=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.880312394}+\dfrac{2}{3}k\pi \radian\\
  \end{cases}\]
  \end{exercise}
  \begin{exercise}
- Trovare l'angolo in radianti per cui $\sin 2x=\num[round-precision=3,round-mode=places]{-0.128}$
+ Trovare l'angolo in radianti per cui $\sin 2x=-\num[round-precision=3,round-mode=places]{0.128}$
  \tcblower
- $\sin 2x=\num[round-precision=3,round-mode=places]{-0.128}$ 
+ $\sin 2x=-\num[round-precision=3,round-mode=places]{0.128}$ 
  
  Controllare che la calcolatrice è impostata in radianti\index{Radianti}\index{Seno}.
  
@@ -349,24 +349,104 @@ x_2=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.880312394}+\dfr
  \tastouguale&\num[round-precision=\lungarrotandamento,round-mode=places]{-0.128352127} 
  \end{tabular} 
  \end{center}
+ Soluzioni per valori negativi dell'angolo
+ \begin{align*}
+ 	2x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{-0.128352127}+2k\pi \radian\\
+ 	x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{-0.064176063}+k\pi \radian\\
+ \end{align*}
+ \begin{align*}
+ 	2x_2&=-\pi-(\SI[round-precision=\lungarrotandamento,round-mode=places]{-0.128352127})+2k\pi \radian\\
+ 	2x_2&=-\SI[round-precision=\lungarrotandamento,round-mode=places]{3.013240526}+2k\pi \radian\\
+ 	x_2&=-\SI[round-precision=\lungarrotandamento,round-mode=places]{1.506620263}+k\pi \radian\\
+ \end{align*}
+ Le soluzioni sono
+ 
+ \[\begin{cases}
+ x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{-0.064176063}+k\pi \radian\\
+ x_2&=-\SI[round-precision=\lungarrotandamento,round-mode=places]{1.506620263}+k\pi \radian\\
+ \end{cases}\]
+ Soluzioni per valori positivi dell'angolo
  \[\alpha=2\pi+ \SI[round-precision=\lungarrotandamento,round-mode=places]{-0.128352127}{\radian}\]
  \begin{align*}
  2x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{6.154833179}+2k\pi \radian\\
- x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{3.205768717}+k\pi \radian\\
+ x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{3,0774165895}+k\pi \radian\\
  \end{align*}
  \begin{align*}
- 2x_2&=\pi+\SI[round-precision=\lungarrotandamento,round-mode=places]{3.269944781}+2k\pi \radian\\
- 2x_2&=\SI[round-precision=\lungarrotandamento,round-mode=places]{2.640937182}+2k\pi \radian\\
+ 2x_2&=\pi+\SI[round-precision=\lungarrotandamento,round-mode=places]{0.128352127}+2k\pi \radian\\
+ 2x_2&=\SI[round-precision=\lungarrotandamento,round-mode=places]{3.2699447805897}+2k\pi \radian\\
  x_2&=\SI[round-precision=\lungarrotandamento,round-mode=places]{1.63497239}+k\pi \radian\\
  \end{align*}
  Le soluzioni sono
  
  \[\begin{cases}
  x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{3.205768717}+k\pi \radian\\
- 
  x_2&=\SI[round-precision=\lungarrotandamento,round-mode=places]{1.63497239}+k\pi \radian\\
  \end{cases}\]
+ 
  \end{exercise}
+ 
+ \begin{exercise}
+ 	Trovare l'angolo in radianti per cui $\sin 6x=-\dfrac{5}{8}$
+ 	\tcblower
+ 	$\sin 6x=-\num[round-precision=3,round-mode=places]{0.625}$ 
+ 	
+ 	Controllare che la calcolatrice è impostata in radianti\index{Gradi}\index{Seno}.
+ 	
+ 	Basta verificare che 
+ 	\testgradi
+ 	
+ 	In caso contrario modificare le impostazioni.
+ 	
+ 	Non resta che procedere con il calcolo.
+ 	
+ 	Le soluzioni sono 
+ 	\[\begin{cases}
+ 	x_1=\alpha+2k\pi\\
+ 	x_2=\pi-\alpha+2k\pi\\
+ 	\end{cases}\]
+ 	Calcolo $\alpha$
+ 	
+ 	\begin{center}
+ 		\begin{tabular}{ll}
+ 			\tastoisin\tasto{-\num[round-precision=3,round-mode=places]{0.625}}
+ 			\tastouguale&\num[round-precision=\lungarrotandamento,round-mode=places]{-38.68218745} 
+ 		\end{tabular} 
+ 	\end{center}
+ 	Soluzioni per valori negativi dell'angolo
+ 	\begin{align*}
+ 	6x_1&=-\SI[round-precision=\lungarrotandamento,round-mode=places]{38.68218745}{\degree}+k\ang{360;;}\\
+ 	x_1&=-\SI[round-precision=\lungarrotandamento,round-mode=places]{6.447031242}{\degree}+k\ang{60;;}\\
+ 	\end{align*}
+ 	\begin{align*}
+ 	6x_2&=-\ang{180;;}-(-\SI[round-precision=\lungarrotandamento,round-mode=places]{38.68218745}{\degree})+k\ang{360}\\
+ 	6x_2&=-\SI[round-precision=\lungarrotandamento,round-mode=places]{141.3178125}{\degree}+k\ang{360}\\
+ 	x_2&=-\SI[round-precision=\lungarrotandamento,round-mode=places]{23.55296876}{\degree}+k\ang{60}\\
+ 	\end{align*}
+ 	Le soluzioni sono
+ 	
+ 	\[\begin{cases}
+ 	x_1&=-\SI[round-precision=\lungarrotandamento,round-mode=places]{6.447031242}{\degree}+k\ang{60;;}\\
+ 	x_2&=-\SI[round-precision=\lungarrotandamento,round-mode=places]{23.55296876}{\degree}+k\ang{60}\\
+ 	\end{cases}\]
+ 	Soluzioni per valori positivi dell'angolo
+ 	\[\alpha=\ang{360} -\SI[round-precision=\lungarrotandamento,round-mode=places]{38.682187745}{\degree}=\SI[round-precision=\lungarrotandamento,round-mode=places]{141.3178125}{\degree}\]
+ 	\begin{align*}
+ 	6x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{141.3178125}{\degree} +k\ang{360}\\
+ 	x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{23.552966875}{\degree} +k\ang{60}\\
+ 	\end{align*}
+ 	\[\alpha=\ang{360} -\ang{180;;}-(-\SI[round-precision=\lungarrotandamento,round-mode=places]{38.68218745}{\degree})=\SI[round-precision=\lungarrotandamento,round-mode=places]{218.68221875}{\degree}\]
+ 	\begin{align*}
+ 	6x_2&=\SI[round-precision=\lungarrotandamento,round-mode=places]{218.68221875}{\degree} +k\ang{60}\\
+ 	x_2&=\SI[round-precision=\lungarrotandamento,round-mode=places]{36.44703646}{\degree} +k\ang{60}\\
+ 	\end{align*}
+ 	Le soluzioni sono
+ 	
+ 	\[\begin{cases}
+ 	x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{23.552966875}{\degree} +k\ang{60}\\
+ 	x_2&=\SI[round-precision=\lungarrotandamento,round-mode=places]{36.44703646}{\degree} +k\ang{60}\\
+ 	\end{cases}\]
+% 	
+\end{exercise}
  \begin{exercise}
  Trovare l'angolo in radianti per cui $\cos 2x=\num[round-precision=3,round-mode=places]{0.128}$
  \tcblower
@@ -394,7 +474,7 @@ x_2=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.880312394}+\dfr
  \tastouguale&\num[round-precision=\lungarrotandamento,round-mode=places]{1.442444199} 
  \end{tabular} 
  \end{center}
- \[\alpha=2\pi+ \SI[round-precision=\lungarrotandamento,round-mode=places]{1.442444199}{\radian}\]
+ \[\alpha=\SI[round-precision=\lungarrotandamento,round-mode=places]{1.442444199}{\radian} +2k\pi\]
  \begin{align*}
  2x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{1.442444199}+2k\pi \radian\\
  x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.721222099}+k\pi \radian\\
@@ -402,9 +482,9 @@ x_2=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.880312394}+\dfr
  Le soluzioni sono
  
  \[\begin{cases}
- x_1&=+\SI[round-precision=\lungarrotandamento,round-mode=places]{1.442444199}+k\pi \radian\\
+ x_1&=+\SI[round-precision=\lungarrotandamento,round-mode=places]{0.721222099}+k\pi \radian\\\
  
- x_2&=-\SI[round-precision=\lungarrotandamento,round-mode=places]{1.442444199}+k\pi \radian\\ 
+ x_2&=-\SI[round-precision=\lungarrotandamento,round-mode=places]{0.721222099}+k\pi \radian\\ 
  \end{cases}\]
  \end{exercise}
  \begin{exercise}[no solution]
@@ -538,15 +618,15 @@ x_2=\SI[round-precision=\lungarrotandamento,round-mode=places]{32.71003412}{\deg
  			\tastouguale&\num[round-precision=\lungarrotandamento,round-mode=places]{76.69006753} 
  		\end{tabular} 
  	\end{center}
- 	\[\alpha=\SI[round-precision=\lungarrotandamento,round-mode=places]{76.69006753}{\degree}\]
+ 	\[\alpha=\SI[round-precision=\lungarrotandamento,round-mode=places]{78.69006753}{\degree}\]
  	\begin{align*}
- 	5x_1-\ang{70;;}&=\SI[round-precision=\lungarrotandamento,round-mode=places]{76.69006753}{\degree}+k\ang{180;;}\\
- 	5x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{76.69006753}{\degree}+\ang{70;;}+k\ang{180;;}\\
+ 	5x_1-\ang{70;;}&=\SI[round-precision=\lungarrotandamento,round-mode=places]{78.69006753}{\degree}+k\ang{180;;}\\
+ 	5x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{78.69006753}{\degree}+\ang{70;;}+k\ang{180;;}\\
  	5x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{148.6900675}{\degree}+k\ang{180;;}\\
  	x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{29.73801351}{\degree}+k\ang{36;;}
  	\end{align*}
  	
- 	Le soluzioni sono
+ 	La soluzione è
  \[x_1=\SI[round-precision=\lungarrotandamento,round-mode=places]{29.73801351}{\degree}+k\ang{36;;}\]
  \end{exercise}
  \begin{exercise}
@@ -610,7 +690,7 @@ x_2=-\SI[round-precision=\lungarrotandamento,round-mode=places]{0.347477012}{\ra
 \begin{exercise}
 	Trovare l'angolo in gradi per cui $\tan (5x-\ang{70;;})=5$
 	\tcblower
-	$\tan (5x-\ang{70;;})=5$
+	$\tan (5x-\ang{70;;})=-5$
 	
 	Controllare che la calcolatrice è impostata in gradi\index{Tangente}.
 	
@@ -627,19 +707,19 @@ x_2=-\SI[round-precision=\lungarrotandamento,round-mode=places]{0.347477012}{\ra
 	\begin{center}
 		\begin{tabular}{ll}
 			\tastoitan\tasto{\num[round-precision=1,round-mode=places]{5}}
-			\tastouguale&\num[round-precision=\lungarrotandamento,round-mode=places]{76.69006753} 
+			\tastouguale&\num[round-precision=\lungarrotandamento,round-mode=places]{-78.69006753} 
 		\end{tabular} 
 	\end{center}
-	\[\alpha=\SI[round-precision=\lungarrotandamento,round-mode=places]{76.69006753}{\degree}\]
+	\[\alpha=-\SI[round-precision=\lungarrotandamento,round-mode=places]{78.69006753}{\degree}\]
 	\begin{align*}
-	5x_1-\ang{70;;}&=\SI[round-precision=\lungarrotandamento,round-mode=places]{76.69006753}{\degree}+k\ang{180;;}\\
-	5x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{76.69006753}{\degree}+\ang{70;;}+k\ang{180;;}\\
-	5x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{148.6900675}{\degree}+k\ang{180;;}\\
-	x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{29.73801351}{\degree}+k\ang{36;;}
+	5x_1-\ang{70;;}&=-\SI[round-precision=\lungarrotandamento,round-mode=places]{76.69006753}{\degree}+k\ang{180;;}\\
+	5x_1&=-\SI[round-precision=\lungarrotandamento,round-mode=places]{78.69006753}{\degree}+\ang{70;;}+k\ang{180;;}\\
+	5x_1&=-\SI[round-precision=\lungarrotandamento,round-mode=places]{8.690067526}{\degree}+k\ang{180;;}\\
+	x_1&=-\SI[round-precision=\lungarrotandamento,round-mode=places]{1.738013505}{\degree}+k\ang{36;;}
 	\end{align*}
 	
-	Le soluzioni sono
-	\[x_1=\SI[round-precision=\lungarrotandamento,round-mode=places]{29.73801351}{\degree}+k\ang{36;;}\]
+	La soluzione è
+	\[x_1=-\SI[round-precision=\lungarrotandamento,round-mode=places]{1.738013505}{\degree}+k\ang{36;;}\]
 \end{exercise}
 \begin{exercise}
 	Trovare i valori dell'incognita per cui $\cos(3x+\ang{50;;})=\cos(2x-\ang{30;;})$
@@ -735,13 +815,14 @@ $\sin(6x-\dfrac{\pi}{3})=\sin(4x +\dfrac{2}{3}\pi)$
 	
 	\begin{align*}
 	5x-\ang{20;;}&=2x+\ang{30;;}+k\ang{180;;}\\
-	3x&=\ang{90;;}-\ang{30;;}+k\ang{180;;}\\
-	3x&=\ang{50;;}+k\ang{180;;}
+	3x&=\ang{20;;}+\ang{30;;}+k\ang{180;;}\\
+	3x&=\ang{50;;}+k\ang{180;;}\\
+	x =\dfrac{\ang{50;;}}{3}+k\ang{60;;}
 	\end{align*}
 	
-	Le soluzioni sono
+	La soluzione è
 	
-\[x =\ang{30;;}+k\ang{36;;}\]
+\[x =\dfrac{\ang{50;;}}{3}+k\ang{60;;}\]
 \end{exercise}
 \begin{exercise}
 	Trovare i valori dell'incognita per cui $\cos(3x+\ang{50;;})=-\cos(2x-\ang{40;;})$
@@ -757,15 +838,15 @@ $\cos(3x+\ang{50;;})=-\cos(2x-\ang{40;;})=\cos(\ang{180;;}-2x+\ang{40;;})$
 	
 	\begin{align*}
 	3x+\ang{50;;}&=\ang{180;;}-2x+\ang{40;;}+k\ang{360;;}\\
-	3x+2x&=\ang{180;;}-\ang{50;;}+ang{40;;}+k\ang{360;;}\\
+	3x+2x&=\ang{180;;}-\ang{50;;}+\ang{40;;}+k\ang{360;;}\\
 	5x&=\ang{170;;}+k\ang{360;;}\\
 	x&=\ang{34;;}+k\ang{72;;}
 	\end{align*}
 	Troviamo la seconda
 	
 	\begin{align*}
-		3x+\ang{50;;}&=\ang{180;;}+2x-\ang{40;;}+k\ang{360;;}\\
-		3x-2x&=\ang{180;;}-\ang{50;;}-ang{40;;}+k\ang{360;;}\\
+		3x+\ang{50;;}&=-\ang{180;;}+2x-\ang{40;;}+k\ang{360;;}\\
+		3x-2x&=-\ang{180;;}-\ang{50;;}-\ang{40;;}+k\ang{360;;}\\
 		x&=-\ang{270;;}+k\ang{360;;}
 	\end{align*}
 	
@@ -833,16 +914,16 @@ $\sin(5x-\ang{70;;})=-\sin(7x +\ang{80;;})=\sin(-7x-\ang{80;;})$
 		-2x&=\ang{50;;}+k\ang{180;;}\\
 		x&=-\ang{25;;}+k\ang{90;;}
 		\end{align*}
+	Troviamo la soluzione
 	
-	
-	\begin{align*}
+		\begin{align*}
 		6x-\ang{30;;}&=-2x+\ang{40;;}+k\ang{180;;}\\
-		6x+2x&=\ang{40;;}-\ang{30;;}+k\ang{180;;}\\
+		6x+2x&=\ang{40;;}+\ang{30;;}+k\ang{180;;}\\
 		8x&=\ang{70;;}+k\ang{180;;}\\
 		x&=\dfrac{\ang{70;;}}{8}+k\dfrac{\ang{180;;}}{8}
 		\end{align*}
 	
-	Le soluzioni sono
+	La soluzione è
 	\[x=\dfrac{\ang{70;;}}{8}+k\dfrac{\ang{180;;}}{8}\]
 \end{exercise}
 

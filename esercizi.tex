@@ -26,41 +26,17 @@
 \input{../Mod_base/unita_misura}
 \input{../Mod_base/utili}
 \input{../Mod_base/stand_class}
-\newcommand{\function}[5]{%
-  \begin{array}{@{}r<{{}}@{}c@{}c@{}l@{}}
-  #1\colon & #2 & {}\to{}     & #3 \\
-           & #4 & {}\mapsto{} & #5
-  \end{array}}
+
 
 %per le semplificazioni
 \usepackage{cancel}
 
-%Simboli logici
-\usepackage{gn-logic14}
-\newcommand{\tabincludegraphics}[2][]{%
-  $\vcenter{\hbox{\includegraphics[#1]{#2}}}$}
-\newcommand{\tabincludestandalone}[2][]{%
-	$\vcenter{\hbox{\includestandalone[#1]{#2}}}$}
 
 
 
-% % % % % % % % % % % % % % % % % braille
 
-\newcommand{\mytable}[1]{%
-	\enskip\begin{tabular}[t]{r|l} 
-		\hline #1 \hline
-	\end{tabular}\enskip}
 
-% % % % % % % % % % % % % % % % % % % % % %
 
-\newenvironment{truthtable}[2][3]
-{\begin{tabular}{*{#1}{c}}
-	\multicolumn{1}{l}{#2}\\}
-	{\end{tabular}}
-	\newcommand{\cport}[1]{%
-		\begin{circuitikz}
-			\draw (0,0) node [#1 port] {};
-		\end{circuitikz}} 
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 

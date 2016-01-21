@@ -173,6 +173,23 @@ Data la coppia di punti	$A\coord{1}{3}$\,$B\coord{-1}{1}$ trovare l'equazione de
 	\end{tabular} 
 	\item Quindi $m=-\dfrac{4}{5}$ $q=\dfrac{7}{5}$ che sostituiti in $y=mx+q$ otteniamo l'equazione cercata $y=-\dfrac{4}{5}x+\dfrac{7}{5}$
 \end{enumerate}
+\begin{cesempiot}{Dati due punti trovare l'equazione della retta}{retta6a}
+	Data la coppia di punti	$A\coord{3}{5}$\,$B\coord{3}{2}$ trovare l'equazione della retta che passa per questi punti.
+\end{cesempiot}
+\begin{enumerate}
+	\item Considero la retta generica $y=mx+q$
+	\item Passaggio per $A\coord{3}{5}$ ottengo $5=3\cdot m+q$
+	\item Passaggio per $B\coord{3}{2}$ ottengo $2=3\cdot m+q$
+	\item Allineo i due risultati e sottraggo
+	\begin{tabular}{rll}
+		$5=$&$3\cdot m$ &$+q$  \\ 
+		$2=$&$3\cdot m$ &$+q$  \\ 
+		\midrule $3=$&$0$& $0$ \\ 
+	\end{tabular} 
+	\item Impossibile, il metodo non funziona.
+	\item I punti $A$ e $B$ hanno la stessa ascissa.
+	\item In questo caso l'equazione è $x=3$
+\end{enumerate}
 \section{Retta per un punto parallela a retta data}
 \begin{esempiot}{Dato un punto e una retta parallela}{retta7}
 	Data la retta $y=3x+4$ Trovare la retta parallela alla retta data che  passa per il punto	$A\coord{2}{3}$
@@ -283,8 +300,30 @@ Partendo da $y-y_1=m(x-x_1)$ passaggio per 	$A\coord{-1}{-2}$
 	y=&m(x+1)-2
 \end{align*}
 L'equazione cercata è $y=m(x+1)$
+\begin{esempiot}{Dati due punti trovare il coefficiente angolare della retta che passa per questi punti}{retta13}
+	Dati i punti $A\coord{2}{5}$ e $B\coord{3}{7}$ trovare il coefficiente angolare della retta che passa per  $A$ E $B$
+\end{esempiot}
+\begin{align*}
+	m=&\dfrac{y_2-y_1}{x_2-x_1}\\
+	\intertext{Passaggio per $A\coord{2}{5}$ e $B\coord{3}{7}$}
+	m=&\dfrac{7-5}{3-2}\\
+	m=&\dfrac{2}{1}\\
+	m=&2\\
+\end{align*}
+Ilcoefficiente angolare $m=2$
+\begin{cesempiot}{Dati due punti trovare il coefficiente angolare della retta che passa per questi punti}{retta13a}
+	Dati i punti $A\coord{2}{5}$ e $B\coord{2}{7}$ trovare il coefficiente angolare della retta che passa per  $A$ E $B$
+\end{cesempiot}
+\begin{align*}
+	m=&\dfrac{y_2-y_1}{x_2-x_1}\\
+	\intertext{Passaggio per $A\coord{2}{5}$ e $B\coord{2}{7}$}
+	m=&\dfrac{7-5}{2-2}\\
+	m=&\dfrac{2}{0}\\
+\intertext{Impossibile}
+\end{align*}
+Non esiste il coefficiente angolare.
 \subsection{Retta per un punto parallela a retta data}
-\begin{esempiot}{Dato un punto e una retta parallela}{retta13}
+\begin{esempiot}{Dato un punto e una retta parallela}{retta14}
 	Data la retta $y=3x+4$ Trovare la retta parallela alla retta data che  passa per il punto	$A\coord{2}{3}$
 \end{esempiot}
 Considero l'equazione generica del fascio $y-y_1=m(x-x_1)$, se le due rette sono parallele $m=3$ quindi
@@ -296,8 +335,8 @@ Considero l'equazione generica del fascio $y-y_1=m(x-x_1)$, se le due rette sono
 	y=&3x-3\\
 \end{align*}
 Otteniamo 	$y=3x-3$ lo stesso risultato dell'\cref{exa:retta7}
-\subsection{Retta passante per un punto perpendicolare a retta data}
-\begin{esempiot}{Dato un punto e una retta perpendicolare}{retta14}
+\subsection{Retta per un punto perpendicolare a retta data}
+\begin{esempiot}{Dato un punto e una retta perpendicolare}{retta15}
 	Data la retta $y=2x+2$ Trovare la retta perpendicolare alla retta data che  passa per il punto	$A\coord{2}{4}$
 \end{esempiot}
 Considero l'equazione generica del fascio $y-y_1=m(x-x_1)$, se le due rette sono parallele $m_1\cdot m_2=-1$ quindi $2m_2=-1$ $m_2=-\dfrac{1}{2}$
@@ -309,8 +348,52 @@ Considero l'equazione generica del fascio $y-y_1=m(x-x_1)$, se le due rette sono
 	y=&-\dfrac{1}{2}x+5\\
 \end{align*}
 Otteniamo 	$y=-\dfrac{1}{2}x+5$ lo stesso risultato dell'\cref{exa:retta9}
+\subsection{Retta oer due punti}
+\begin{esempiot}{Fascio di rette e retta per due punti}{rettaf1}
+Dati due punti $A\coord{-5}{2}$ $B\coord{3}{6}$ trovare la retta che passa per questi punti.
+\end{esempiot}
+\begin{enumerate}
+	\item Considero l'equazione del fascio $y-y_1=m(x-x_1)$
+	\item Passaggio per $A\coord{-5}{2}$ ottengo $y-2=m(x+5)$
+	\item Trovo il coefficiente angolare come con l'\cref{exa:retta13}
+	\item $m=\dfrac{1}{2}$
+	\item \begin{align*}
+		y-2=&\dfrac{1}{2}(x+3)\\
+		y=&\dfrac{1}{2}x+\dfrac{3}{2}+2\\
+		y=&\dfrac{1}{2}x+\dfrac{7}{2}
+	\end{align*}
+\end{enumerate}
+\begin{esempiot}{Fascio di rette e retta per due punti}{rettaf2}
+	Dati due punti $A\coord{3}{6}$ $B\coord{5}{2}$ trovare la retta che passa per questi punti.
+\end{esempiot}
+\begin{enumerate}
+	\item Considero l'equazione del fascio $y-y_1=m(x-x_1)$
+	\item Passaggio per $A\coord{3}{6}$ ottengo $y-6=m(x-3)$
+	\item Passaggio per $B\coord{5}{2}$ ottengo $2-6=m(5-3)$
+	\item Semplifico $-4=m2$
+	\item $m=-2$
+	\item \begin{align*}
+		y-6=&-2(x-3)\\
+		y=&-2x+6+6\\
+		y=&-2x+12
+	\end{align*}
+\end{enumerate}
+\begin{esempiot}{Retta per due punti}{rettaf3}
+	Dati due punti $A\coord{3}{6}$ $B\coord{5}{2}$ trovare la retta che passa per questi punti.
+\end{esempiot}
+\begin{enumerate}
+	\item Considero l'equazione  $\dfrac{y-y_1}{y_2-y_1}=\dfrac{x-x_1}{x_2-x_1}$
+	\item \begin{align*}
+		\intertext{Passaggio per $A\coord{3}{6}$ $B\coord{5}{2}$ }
+	\dfrac{y-4}{2-6}=&\dfrac{x-3}{5-3}\\
+	\dfrac{y-4}{-4}=&\dfrac{x-3}{2}\\
+		y-6=&-4\dfrac{x-3}{2}\\
+		y=&-2(x-3)+6\\
+		y=&-2x+12
+	\end{align*}
+\end{enumerate}
 \section{Intersezioni fra rette}
-\begin{esempiot}{Date due rette trovare il punto di intersezione}{retta15}
+\begin{esempiot}{Date due rette trovare il punto di intersezione}{retta16}
 	Data le rette $y=-2x+4$ e $y=x+1$ trovare il loro eventuale punto di intersezione
 \end{esempiot}
 Imposto il sistema 
@@ -344,8 +427,8 @@ y=x+1
 \end{cases}
 \end{align*}
 Le due rette si incontrano in $A\coord{1}{2}$
-\begin{esempiot}{Date due rette trovare il punto di intersezione}{retta16}
-	Data le rette $y=\dfrac{1}{2}x+4$ e $y=-x+1$ trovare il loro eventuale punto di intersezione
+\begin{esempiot}{Date due rette trovare il punto di intersezione}{retta17}
+	Data le rette $y=\dfrac{1}{2}x+4$ e $y=-x+1$ trovare la loro eventuale intersezione.
 \end{esempiot}
 Imposto il sistema 
 \[\begin{cases} 
@@ -382,7 +465,7 @@ y=-x+1
 \end{cases}
 \end{align*}
 Le due rette si incontrano in $A\coord{-2}{3}$
-\begin{cesempiot}{Date due rette trovare il punto di intersezione}{retta17}
+\begin{cesempiot}{Date due rette trovare il punto di intersezione}{retta18}
 	Data le rette $y=2x+5$ e $y=2x+6$ trovare il loro eventuale punto di intersezione
 \end{cesempiot}
 Imposto il sistema 

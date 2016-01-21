@@ -78,9 +78,13 @@
 %\listoftables
 \addcontentsline{toc}{chapter}{\listfigurename}
 \listoffigures
-\cleardoublepage
+\cleardoublepage\renewcommand\lstlistlistingname{Elenco esempi}
+\addcontentsline{toc}{chapter}{\lstlistlistingname}
+\addcontentsline{toc}{section}{Esempi}
 \lstlistoflistings{}
-\tcblistof[\section*]{thm}{Elenco esempi}
+\tcblistof[\section*]{thm}{Esempi}
+\addcontentsline{toc}{section}{Contro esempi}
+\tcblistof[\section*]{cthm}{Contro esempi}
 \mainmatter%
 \opt{prima}{\input{primo/prima}}
 \opt{secondo}{\input{secondo/secondo}}

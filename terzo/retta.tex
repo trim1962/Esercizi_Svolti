@@ -348,7 +348,7 @@ Considero l'equazione generica del fascio $y-y_1=m(x-x_1)$, se le due rette sono
 	y=&-\dfrac{1}{2}x+5\\
 \end{align*}
 Otteniamo 	$y=-\dfrac{1}{2}x+5$ lo stesso risultato dell'\cref{exa:retta9}
-\subsection{Retta oer due punti}
+\subsection{Retta per due punti}
 \begin{esempiot}{Fascio di rette e retta per due punti}{rettaf1}
 Dati due punti $A\coord{-5}{2}$ $B\coord{3}{6}$ trovare la retta che passa per questi punti.
 \end{esempiot}
@@ -377,6 +377,17 @@ Dati due punti $A\coord{-5}{2}$ $B\coord{3}{6}$ trovare la retta che passa per q
 		y=&-2x+6+6\\
 		y=&-2x+12
 	\end{align*}
+\end{enumerate}
+\begin{cesempiot}{Fascio di rette e retta per due punti}{rettaf3a}
+	Dati due punti $A\coord{2}{3}$ $B\coord{2}{5}$ trovare la retta che passa per questi punti.
+\end{cesempiot}
+\begin{enumerate}
+	\item Considero l'equazione del fascio $y-y_1=m(x-x_1)$
+	\item Passaggio per $A\coord{2}{3}$ ottengo $y-3=m(x-2)$
+	\item Passaggio per $B\coord{2}{5}$ ottengo $5-3=m(2-3)$
+	\item Semplifico $2=0$
+	\item Impossibile. In questo caso la soluzione è:
+	\item $x=2$
 \end{enumerate}
 \begin{esempiot}{Retta per due punti}{rettaf3}
 	Dati due punti $A\coord{3}{6}$ $B\coord{5}{2}$ trovare la retta che passa per questi punti.
@@ -488,3 +499,46 @@ Risolvo il sistema formato dalle due rette in forma esplicita con il metodo del 
 \end{cases}
 \end{align*}
 Le due rette non si intersecano.
+\begin{esempiot}{Date due rette trovare il punto di intersezione}{retta19}
+	Data le rette $x+3y-4=0$ e $2x+3y-5=0$ trovare il loro eventuale punto di intersezione
+\end{esempiot}
+Imposto il sistema 
+\[\begin{cases} 
+x+3y=4\\
+2x+3y=5
+\end{cases}\]
+Risolvo il sistema formato dalle due rette  con il metodo della sostituzione.
+\begin{align*}
+	&\begin{cases} 
+	x+3y=4\\
+	2x+3y=5
+	\end{cases}&&\begin{cases} 
+x=-3y+4\\
+2x+3y=5
+\end{cases}\\
+&\begin{cases} 
+	x=4-3y\\
+	2(4-3y)+3y=5
+\end{cases}&&\begin{cases} 
+	x=4-3y\\
+	8-6y+3y=5
+\end{cases}\\
+&\begin{cases} 
+	x=4-3y\\
+	-3y=5-8
+\end{cases}&&\begin{cases} 
+x=4-3y\\
+-3y=-3
+\end{cases}\\
+&\begin{cases} 
+	x=4-3y\\
+	y=1
+\end{cases}&&\begin{cases} 
+x=4-3\\
+y=1
+\end{cases}\\
+&\begin{cases} 
+	x=1\\
+	y=1
+\end{cases}\\
+\end{align*}
